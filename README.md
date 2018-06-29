@@ -12,7 +12,7 @@
 
 #### 2. Склонируйте проект из репозитория в рабочую папку
 ```
-git clone git@gitlab.dev.idpowers.com:idpowers/frontend-starter.git
+git clone https://github.com/schrodinger-cat/markup-training.git
 ```
 #### 3. Из корня проекта установите зависимости
 ```
