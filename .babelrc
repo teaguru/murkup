@@ -1,0 +1,4 @@
+{
+  "presets": ["env", ["es2015", {"modules":"umd"}], "stage-2"],
+  "plugins": ["transform-runtime"]
+}
