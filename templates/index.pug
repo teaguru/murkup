@@ -8,8 +8,25 @@ block extra-meta
 block extra-styles
 
 block content
-  .sample
-      img(class="logo" src="images/logo.png", alt="hi")
 
-block extra-js
-  script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+
+
+    .header
+        .header_section
+            .header_item.HeaderButton
+                a(href='#') Каталог товаров
+            .header_item.HeaderButton
+                a(href='#') Вязание на заказ
+        .header_logo
+            .header_item.logo
+                img(src="images/logo.png")
+
+        .header_section
+            .header_item.HeaderButton
+                a(href='#') К
+            .header_item.HeaderButton
+                a(href='#') ЧЧ
+            .header_item.HeaderButton
+                a(href='#') Корзина:пока пуста
+
+
