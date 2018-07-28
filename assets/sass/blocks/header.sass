@@ -1,14 +1,23 @@
+//вынеси определение переменных в _variables.sass
+  
 //colors
 $color_danube_approx: #689cd2
 $white: #fff
 $urllogo: url("images/logo.png")
 //fonts
+//плохое название, лучше font_verdana
 $font_0: Verdana
 
+//я говорил уже, что так делать плохо
+//глобально переопределять стили нужно только в том случае, если это действительно затрагивает все 
+//элементы на сайте, и делать это лучше в файле _common.sass, он для этого и сделан
 a
   color: black
   text-decoration: none
 
+
+//оставлять закомментированный код - плохой тон, от этого лучше избавляться
+//для этого у тебя есть собственно гит
 .header
   display: flex
   height: 50px
@@ -59,3 +68,25 @@ a
   width: 293px
   border: 1px solid rgba(black, 0.1)
 
+
+
+//TODO: remove
+.presentation
+  padding-top: 100px
+
+  &__code
+    display: inline-block
+    padding: 1px 3px
+    color: #d61984
+    background-color: #b2b2b2
+
+  &__logo
+    width: 200px
+    height: 100px
+    background-image: url(../images/logo.svg)
+    background-repeat: no-repeat
+    background-size: cover
+
+  &__svg
+    width: 100px
+    fill: red

@@ -1,4 +1,4 @@
-gnode_modules
+node_modules
 build/*
 !build/.gitkeep
 yarn.lock
