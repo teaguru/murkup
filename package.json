@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=development webpack --mode development",
-    "watch": "NODE_ENV=development webpack --watch --mode development",
-    "build": "NODE_ENV=production webpack --mode production",
-    "serve": "NODE_ENV=development webpack-dev-server --open --mode development",
+    "dev": "set NODE_ENV=development webpack --mode development",
+    "watch": "set NODE_ENV=development webpack --watch --mode development",
+    "build": "set NODE_ENV=production webpack --mode production",
+    "serve": "set NODE_ENV=development webpack-dev-server --open --mode development",
     "fullbuild": "gulp build; NODE_ENV=production webpack --mode production"
   },
   "repository": "git@gitlab.dev.idpowers.com:idpowers/frontend-starter.git",
