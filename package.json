@@ -46,6 +46,8 @@
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "cross-env": "^5.2.0",
     "webpack-cli": "^2.1.3"
   }
 }
