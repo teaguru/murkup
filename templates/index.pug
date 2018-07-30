@@ -10,46 +10,21 @@ block extra-styles
 block content
     .header
         .header_section
-            .w293.header_item.HeaderButton
+            .w230.header_item.HeaderButton
                 a(href='#') Каталог товаров
-            .header_item.HeaderButton
+            .w200.header_item.HeaderButton
                 a(href='#') Вязание на заказ
-        .header_item
-            img(src="svg/logo.svg" alt="LOGO")
+        .header_logo
+            img(src="images/logo.svg", alt="", width="100")
 
         .header_section
             .header_item.HeaderButton
                 a(href='#') К
             .header_item.HeaderButton
                 a(href='#') ЧЧ
-            .header_item.HeaderButton
+            .w320.header_item.HeaderButton
                 a(href='#') Корзина:пока пуста
 
 
     .presentation
-        h2 Три примера, как вставлять svg на сайт
 
-        h3 Вставка через img
-        img(src="images/logo.svg", alt="", width="100")
-        p Для начала необходимо положить в папку 
-            span.presentation__code assets/images
-            |   саму svg
-        p Затем, что бы было понятнее откуда строить путь до файла, смотри на папку build, и считай путь от файла index.html
-        p В данном случае это 
-            span.presentation__code images/logo.svg
-
-        h3 Вставка через background
-        .presentation__logo
-        p Логика простая - строим путь от физического расположения файла
-        p Обрати внимание, что путь до картинки тут строится от css файла в папке css, и соответственно, 
-            |что бы получить файл на уровень выше, необходимо указать путь 
-            span.presentation__code ../images/logo.svg
-
-        h3 Вставка через use
-        svg
-            use(xlink:href="#icon-logo")
-        p В этом случае закидываем svg в папку svg, вставляем конструкцию выше, и в качестве параметра xlink:href
-            | указываем #icon-имяфайла
-        svg.presentation__svg
-            use(xlink:href="#icon-logo")
-        p на тэг svg можно вешать стили и делать что угодно

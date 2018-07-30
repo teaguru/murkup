@@ -1,12 +1,12 @@
 //вынеси определение переменных в _variables.sass
   
 //colors
-$color_danube_approx: #689cd2
+$colorHead: #689cd2
 $white: #fff
 $urllogo: url("images/logo.png")
 //fonts
 //плохое название, лучше font_verdana
-$font_0: Verdana
+$fontMain: Verdana
 
 //я говорил уже, что так делать плохо
 //глобально переопределять стили нужно только в том случае, если это действительно затрагивает все 
@@ -20,31 +20,31 @@ a
 //для этого у тебя есть собственно гит
 .header
   display: flex
-  height: 50px
-  //justify-content: space-between
+    //justify-content: space-between
   padding: 0px
-  margin: 10px
+  margin: 0px auto
   //background: white
   max-width: 1150px
-  font-family: $font_0
+  font-family: $fontMain
   font-size: 16px
   font-weight: bold
   color: black
   width: 100%
-  position: fixed
+  position: relative
   top: 0
   left: 0
   align-items: center
   align-content: center
   justify-content: center
-  //overflow: auto
+
 
   &_section
     display: flex
     align-items: center
-    height: 70px
+    height: 60px
     justify-content: space-between
     background-color: #00cc99
+
 
   &_item
     padding: 10px 15px
@@ -55,7 +55,7 @@ a
     border-bottom: 1px solid rgba(black, 0.1)
 
   &_logo
-    position: absolute
+   // position: absolute
     left: calc(50% - 50px)
     width: 100px
     height: 50px
@@ -64,9 +64,20 @@ a
 .headerbutton
   cursor: pointer
 
-.w293
-  width: 293px
-  border: 1px solid rgba(black, 0.1)
+.w230
+  width: 230px
+  border-bottom: 1px solid rgba(black, 0.1)
+  border-right: 1px solid rgba(black, 0.1)
+
+.w200
+  width: 200px
+  border-bottom: 1px solid rgba(black, 0.1)
+  //background-color: red
+  //padding: 0px 0px 0px 30px
+.w320
+  width: 300px
+  border-bottom: 1px solid rgba(black, 0.1)
+  border-left: 1px solid rgba(black, 0.1)
 
 
 
@@ -81,8 +92,8 @@ a
     background-color: #b2b2b2
 
   &__logo
-    width: 200px
-    height: 100px
+    width: 300px
+    height: 50px
     background-image: url(../images/logo.svg)
     background-repeat: no-repeat
     background-size: cover
