@@ -7,6 +7,7 @@ $urllogo: url("images/logo.png")
 //fonts
 //плохое название, лучше font_verdana
 $fontMain: Verdana
+$line: 1px solid rgba(black, 0.1)
 
 //я говорил уже, что так делать плохо
 //глобально переопределять стили нужно только в том случае, если это действительно затрагивает все 
@@ -41,24 +42,26 @@ a
   &_section
     display: flex
     align-items: center
-    height: 60px
-    justify-content: space-between
-    background-color: #00cc99
+    height: 85px
+    justify-content: center
+
 
 
   &_item
+    display: flex
     padding: 10px 15px
     font-size: 10px
     margin-left: 0px
     min-width: 110px
-    height: 50px
-    border-bottom: 1px solid rgba(black, 0.1)
+    height: 85px
+    border-bottom: $line
+    justify-content: center
+    align-items: center
+    border-bottom: $line
 
   &_logo
-   // position: absolute
-    left: calc(50% - 50px)
-    width: 100px
-    height: 50px
+
+
 
 
 .headerbutton
@@ -66,18 +69,36 @@ a
 
 .w230
   width: 230px
-  border-bottom: 1px solid rgba(black, 0.1)
-  border-right: 1px solid rgba(black, 0.1)
+  border-bottom: $line
+  border-right: $line
 
 .w200
   width: 200px
-  border-bottom: 1px solid rgba(black, 0.1)
+  border-bottom: $line
   //background-color: red
   //padding: 0px 0px 0px 30px
 .w320
-  width: 300px
-  border-bottom: 1px solid rgba(black, 0.1)
-  border-left: 1px solid rgba(black, 0.1)
+  width: 220px
+  border-bottom: $line
+
+.w85
+  width: 85px
+  min-width: 85px
+  border-right: $line
+  border-left: $line
+  background-color: rgba(14, 14, 74, 0.07)
+  align-items: center
+  align-content: center
+  justify-content: center
+
+
+.wc
+  width: 10px
+  min-width: 10px
+  background-color: #cc3905
+
+
+
 
 
 
