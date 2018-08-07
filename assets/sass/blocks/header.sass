@@ -21,29 +21,32 @@ a
 //для этого у тебя есть собственно гит
 .header
   display: flex
-    //justify-content: space-between
+  justify-content: space-between
   padding: 0px
   margin: 0px auto
   //background: white
+  width: 1150px
   max-width: 1150px
   font-family: $fontMain
   font-size: 16px
   font-weight: bold
   color: black
-  width: 100%
-  position: relative
+  //width: 100%
+  position: static
   top: 0
   left: 0
   align-items: center
   align-content: center
-  justify-content: center
+  //justify-content: center
 
 
   &_section
+
+
     display: flex
-    align-items: center
+    align-items: stretch
     height: 85px
-    justify-content: center
+    justify-content: space-between
 
 
 
@@ -61,25 +64,22 @@ a
 
   &_logo
 
-
-
-
 .headerbutton
   cursor: pointer
 
 .w230
   width: 230px
-  border-bottom: $line
   border-right: $line
+  border-left: $line
 
 .w200
   width: 200px
   border-bottom: $line
-  //background-color: red
-  //padding: 0px 0px 0px 30px
+
 .w320
   width: 220px
-  border-bottom: $line
+  border-right: $line
+
 
 .w85
   width: 85px
@@ -91,11 +91,53 @@ a
   align-content: center
   justify-content: center
 
+.home
+  display: flex
+  justify-content: space-between
+  padding: 0px
+  margin: 0px auto
+  //background: white
+  max-width: 1150px
+  height: 1500px
+  font-family: $fontMain
+  font-size: 14px
+  font-weight: bold
+  color: black
+  width: 1150px
+  //position: relative
+  top: 0
+  left: 0
+  align-items: flex-start
+  align-content: stretch
+  justify-content: center
+  border-style: double
+  background-color: #0000fe
 
-.wc
-  width: 10px
-  min-width: 10px
-  background-color: #cc3905
+  &_top
+    display: flex
+    align-items: flex-start
+    height: 85px
+    width: 1150px
+    justify-content: flex-start
+    background-color: #00cc99
+    align-content: stretch
+
+  &_top_right
+    display: flex
+    padding: 10px 15px
+    font-size: 10px
+    margin-left: 0px
+    min-width: 110px
+    height: 85px
+    justify-content: flex-start
+    align-items: left
+    align-content: space-between
+    border-style: dotted
+    background-color: red
+
+
+
+
 
 
 
