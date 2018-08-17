@@ -64,23 +64,28 @@
 
 .home
   display: flex
-  justify-content: space-between
+  justify-content: flex-start
   padding: 0px
   margin: 0px auto
-  //background: white
+  width: 1150px
   max-width: 1150px
-  height: 1500px
+  height: 740px
   font-family: $font_verdana
-  font-size: 14px
+  font-size: 16px
   font-weight: bold
   color: black
-  width: 1150px
-  //position: relative
+  //width: 100%
+  position: static
   top: 0
   left: 0
   align-items: flex-start
-  align-content: stretch
-  justify-content: center
+  align-content: flex-start
+  background-color: rgb(249,249,249)
+  background-image: url(../images/hero-desktop.jpg)
+  background-repeat: no-repeat
+  background-position: center
+  flex-wrap: wrap
+  
   
 
 
@@ -88,21 +93,51 @@
     display: flex
     align-items: flex-start
     height: 85px
-    width: 1150px
     justify-content: flex-start
-    align-content: stretch
+    width: 100%
 
-  &_top_right
+
+
+
+
+    &_right
+      display: flex
+      padding: 15px 15px
+      font-size: 10px
+      margin-left: 0px
+      min-width: 110px
+      height: 85px
+      justify-content: center
+      align-items: center
+
+  &_h1
     display: flex
-    padding: 15px 15px
-    font-size: 10px
-    margin-left: 0px
-    min-width: 110px
-    height: 85px
     justify-content: center
+    top: 20%
+    left: 50%
+    position: relative
+    //margin-right: 10%
+    transform: translate(-50%, -50%)
+    font-size: 50px
+    font-family:  $font_verdana
     align-items: center
-    align-content: space-between
+    justify-content: center
 
+
+.w-230
+    width: 230px
+.w-320
+  width: 220px
+
+
+
+.w-320-l
+  width: 220px
+  font-style: italic
+  font-weight: normal
+
+.white
+  width: 505px
 
 
 
@@ -133,3 +168,4 @@
   &__svg
     width: 100px
     fill: red
+
