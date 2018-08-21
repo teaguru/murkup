@@ -147,6 +147,7 @@
   flex-wrap: nowrap
   width: 100%
   flex-direction: row
+  height: 120px
 
 
 .green-back
@@ -161,14 +162,15 @@
 
 
   &-item
-    align-items: flex-end
+    display: flex
+    align-items: center
+    justify-content: space-between
     background-color: #63d1bb
     height: 120px
     width: 574px
     align-self: flex-end
     //-webkit-align-self: flex-end
     margin-top: auto
-    flex-wrap: wrap
     border: 25px solid
     border-image-source: url(../images/zigzag.svg)
     border-top: 0
@@ -181,15 +183,19 @@
 
 
 
+
+
+
   &-item-d
-    align-items: flex-end
+    align-items: center
+    display: flex
+    justify-content: space-between
     background-color: #56c3b2
     height: 120px
     width: 574px
     align-self: flex-end
       //-webkit-align-self: flex-end
     margin-top: auto
-    flex-wrap: wrap
     border: 25px solid
     border-image-source: url(../images/zigzag.svg)
     border-top: 0
@@ -205,6 +211,15 @@ a.white
   color: white
   font-family: Tahoma
   font-size: 20px
+
+img.lamp
+  opacity: 0.25
+  margin-right: 36px
+  margin-bottom: 34px
+  margin-top: 30px
+  //padding: 0px 35px 1px 1px
+
+
 
 
 
