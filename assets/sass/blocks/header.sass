@@ -1,18 +1,12 @@
 .header
   display: flex
   justify-content: space-between
-  padding: 0px
   margin: 0px auto
   width: 1150px
   max-width: 1150px
   font-family: $font_verdana
   font-size: 16px
   font-weight: bold
-  //color: black
-  //width: 100%
-  position: static
-  top: 0
-  left: 0
   align-items: center
   align-content: center
   border-bottom: $line
@@ -26,14 +20,12 @@
 
   &_item
     display: flex
-    padding: 10px 15px
     font-size: 10px
     margin-left: 0px
     min-width: 110px
     height: 85px
     justify-content: center
     align-items: center
-
 
 .headerbutton
   cursor: pointer
@@ -51,34 +43,23 @@
   width: 220px
   border-right: $line
 
-
 .w85
   width: 85px
-  min-width: 85px
   border-right: $line
   border-left: $line
   background-color: rgba(14, 14, 74, 0.07)
-  align-items: center
-  align-content: center
   justify-content: center
 
 .home
   display: flex
   justify-content: space-between
-  padding: 0px
   margin: 0px auto
   width: 1150px
-  max-width: 1150px
   height: 740px
   font-family: $font_verdana
   font-size: 16px
   font-weight: bold
-  color: black
-  //width: 100%
   position: static
-  top: 0
-  left: 0
-  align-items: flex-start
   align-content: space-between
   background-color: rgb(249,249,249)
   background-image: url(../images/hero-desktop.jpg)
@@ -91,14 +72,9 @@
 
   &_top
     display: flex
-    align-items: flex-start
     height: 85px
     justify-content: flex-start
     width: 100%
-
-
-
-
 
     &_right
       display: flex
@@ -116,7 +92,6 @@
     top: -30%
     left: 7%
     position: relative
-    //margin-right: 10%
     transform: translate(50%, 50%)
     font-size: 50px
     font-family:  $font_verdana
@@ -129,9 +104,6 @@
     width: 230px
 .w-320
   width: 220px
-
-
-
 .w-320-l
   width: 220px
   font-style: italic
@@ -144,7 +116,6 @@
 .home_bottom
   display: flex
   align-items: flex-end
-  flex-wrap: nowrap
   width: 100%
   flex-direction: row
   height: 120px
@@ -152,13 +123,6 @@
 
 .green-back
   display: flex
-  align-items: flex-end
-  align-content: flex-end
-  height: 140px
-  justify-content: flex-end
-  width: 100%
-  flex-direction: row
-  color: red
 
 
   &-item
@@ -168,8 +132,6 @@
     background-color: #63d1bb
     height: 120px
     width: 574px
-    align-self: flex-end
-    //-webkit-align-self: flex-end
     margin-top: auto
     border: 25px solid
     border-image-source: url(../images/zigzag.svg)
@@ -194,7 +156,6 @@
     height: 120px
     width: 574px
     align-self: flex-end
-      //-webkit-align-self: flex-end
     margin-top: auto
     border: 25px solid
     border-image-source: url(../images/zigzag.svg)
@@ -212,37 +173,13 @@ a.white
   font-family: Tahoma
   font-size: 20px
 
-img.lamp
+.lamp
   opacity: 0.25
   margin-right: 36px
   margin-bottom: 34px
   margin-top: 30px
-  //padding: 0px 35px 1px 1px
 
 
 
 
-
-
-
-//TODO: remove
-.presentation
-  padding-top: 100px
-
-  &__code
-    display: inline-block
-    padding: 1px 3px
-    color: #d61984
-    background-color: #b2b2b2
-
-  &__logo
-    width: 300px
-    height: 50px
-    background-image: url(../images/logo.svg)
-    background-repeat: no-repeat
-    background-size: cover
-
-  &__svg
-    width: 100px
-    fill: red
 
