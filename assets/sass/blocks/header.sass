@@ -3,6 +3,7 @@
   justify-content: space-between
   margin: 0px auto
   width: 1150px
+  width: 100%
   max-width: 1150px
   font-family: $font_verdana
   font-size: 16px
@@ -36,7 +37,7 @@
   border-left: $line
 
 .w200
-  width: 200px
+  width: 285px
 
 
 .w320
@@ -89,15 +90,25 @@
   &_h1
     display: flex
     justify-content: center
-    top: -30%
-    left: 7%
+    align-self: center
+    align-items: center
+    margin-left: 330px
+    //top: -30%
+    //left: 7%
     position: relative
-    transform: translate(50%, 50%)
+    //transform: translate(50%, 50%)
     font-size: 50px
     font-family:  $font_verdana
-    align-items: center
-    align-self: center
-    margin-top: auto
+    margin-top: -150px
+
+
+.w230-tablet
+  visibility: hidden
+  display: none
+
+.w200-tablet
+  visibility: hidden
+  display: none
 
 
 .w-230
@@ -179,7 +190,53 @@ a.white
   margin-bottom: 34px
   margin-top: 30px
 
+@media (min-width: 770px) and (max-width: 1070px)
+  .header
+   width: 770px
+  .home
+    width: 770px
+  .header
+    width: 770px
+
+  .header_section
+    width: 770px
 
 
+  .w230
+    visibility: hidden
+    display: none
 
+  .w200
+    visibility: hidden
+    display: none
 
+  .header_logo
+    margin-left: 30px
+
+  .w230-tablet
+    visibility: visible
+    display: flex
+    width: 200px
+  .w200-tablet
+    visibility: visible
+    display: flex
+    width: 200px
+
+  .w-320
+    visibility: hidden
+    display: none
+  .w-230
+    visibility: hidden
+    display: none
+
+  .home_h1
+    font-size: 40px
+    margin-left: 180px
+  .home_bottom
+    width: 770px
+
+  .green-back-item
+    width: 385px
+
+  .green-back-item-d
+    width: 385px
