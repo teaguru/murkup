@@ -201,6 +201,8 @@ a.white
   margin-top: 30px
 .logo-item
   display: none
+.logo-menu
+  display: none
 //tablet version
 @media (min-width: 770px) and (max-width: 1070px)
   .header
@@ -264,7 +266,7 @@ a.white
   .header
     width: 320px
     flex-direction: column
-    height: 400px
+    //height: 400px
     align-content: flex-start
     justify-content: flex-start
 
@@ -301,6 +303,8 @@ a.white
     background-image: url(../images/mobile-logo.svg)
     background-size: 30%
 
+
+
   .mobsearch
     visibility: visible
     display: flex
@@ -324,3 +328,102 @@ a.white
   .header_logo
     justify-content: flex-end
     padding-right: 30px
+
+
+  /*menu*/
+  .logo
+    color: white
+    border: none
+    cursor: pointer
+    padding: 20px
+    margin-top: 20px
+    visibility: visible
+    display: flex
+    .logo-item
+      display: none
+    .logo-menu
+      display: flex
+
+
+  .mainmenubtn:hover
+    visibility: visible
+    display: flex
+
+
+  .dropdown
+    position: relative
+    display: flex
+    height: auto
+
+  .dropdown-child
+    display: none
+    min-width: 200px
+    height: 80px
+
+
+
+  .dropdown-child a
+    padding: 20px
+    //text-decoration: none
+    display: flex
+    height: auto
+
+
+  .dropdown:hover .dropdown-child
+    display: flex
+
+  .dropdown:hover .logo
+    .logo-item
+      display: flex
+    .logo-menu
+      display: none
+
+
+
+  .logo
+    display: flex
+    visibility: visible
+
+
+
+
+  .home
+    display: flex
+    position: relative
+    align-self: flex-start
+    justify-content: flex-end
+
+
+  .home_h1
+    visibility: hidden
+    display: none
+
+
+  .home_top
+    display: none
+    visibility: hidden
+
+
+  .home_bottom
+    display: flex
+
+
+
+  .green-back
+    display: flex
+    width: 320px
+    flex-direction: column
+
+
+
+
+
+
+  .green-back-item
+    display: flex
+    width: 320px
+    border: none
+    &-d
+      display: flex
+      width: 320px
+      border: none

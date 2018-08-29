@@ -8,21 +8,22 @@ block extra-meta
 block extra-styles
 
 block content
-    .header
+    .header.dropdown
         .header_section
-            .w230.header_item.HeaderButton
+            .w230.header_item.HeaderButton.dropdown-child
                 a(href='#') Каталог товаров
-            .w200.header_item.HeaderButton
+            .w200.header_item.HeaderButton.dropdown-child
                 a(href='#') Вязание на заказ
             .header_logo.header_item.logo
                 img(class='logo-item' src="images/close.svg", alt="", width="20")
+                img(class='logo-menu' src="images/logo-menu.svg", alt="", width="20")
 
         .header_section
             .header_item_mobile
-            .w85.header_item.HeaderButton
+            .w85.header_item.HeaderButton.dropdown-child
                 img(class='icon-mob-search' src="images/search.svg", alt="", width="12")
                 a(class='mobsearch' href='#')| Поиск по сайту
-            .w320.header_item.HeaderButton
+            .w320.header_item.HeaderButton.dropdown-child
                 img(class='icon-mob' src="images/cart.svg", alt="", width="12")
 
                 a(href='#')  Корзина: пока пуста
