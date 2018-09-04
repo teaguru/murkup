@@ -154,15 +154,12 @@
     height: 120px
     width: 574px
     margin-top: auto
-    border: 25px solid
-    border-image-source: url(../images/zigzag.svg)
-    border-top: 0
-    border-left: 0
-    border-right: 0
-    border-image-slice: 100
-    border-image-repeat: round
+    background-image: url(../images/zigzag.svg)
+    background-repeat: no-repeat
+    background-position: bottom
     padding-left: 30px
     padding-top: 15px
+    -ms-background-position-y: 52
 
 
 
@@ -178,15 +175,13 @@
     width: 574px
     align-self: flex-end
     margin-top: auto
-    border: 25px solid
-    border-image-source: url(../images/zigzag.svg)
-    border-top: 0
-    border-left: 0
-    border-right: 0
-    border-image-slice: 100
-    border-image-repeat: round
+
+    background-image: url(../images/zigzag.svg)
+    background-repeat: no-repeat
+    background-position: bottom
     padding-left: 30px
     padding-top: 15px
+    -ms-background-position-y: 52
 
 
 a.white
@@ -256,9 +251,11 @@ a.white
 
   .green-back-item
     width: 385px
+    background-image: none
 
   .green-back-item-d
     width: 385px
+    background-image: none
 
 
 //mobile version
@@ -423,7 +420,9 @@ a.white
     display: flex
     width: 320px
     border: none
+    background-image: none
     &-d
       display: flex
       width: 320px
       border: none
+      background-image: none
