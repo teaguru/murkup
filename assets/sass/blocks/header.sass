@@ -164,6 +164,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+
     background-color: #63d1bb
     height: 120px
     width: 574px
@@ -171,8 +172,8 @@
     background-image: url(../images/zigzag.svg)
     background-repeat: no-repeat
     background-position: bottom
-    padding-left: 30px
-    padding-top: 15px
+    padding-left: 40px
+    padding-top: -15px
     -ms-background-position-y: 52
 
 
@@ -193,15 +194,15 @@
     background-image: url(../images/zigzag.svg)
     background-repeat: no-repeat
     background-position: bottom
-    padding-left: 30px
-    padding-top: 15px
+    padding-left: 40px
+    padding-top: -10px
     -ms-background-position-y: 52
 
 
-a.white
+.white
   color: white
   font-family: Tahoma
-  font-size: 20px
+  font-size: 25px
 
 .lamp
   opacity: 0.25
@@ -212,6 +213,84 @@ a.white
   display: none
 .logo-menu
   display: none
+
+// block featured
+.featured
+  display: flex
+  justify-content: space-between
+  margin: 0px auto
+  width: 1150px
+  height: 800px
+  max-width: 1150px
+  font-family: $font_verdana
+  font-size: 16px
+  font-weight: bold
+  align-items: flex-start
+  align-content: flex-start
+
+  .fe-1
+    display: flex
+    width: 220px
+    //background-color: #0000fe
+    height: 800px
+    justify-content: center
+    align-content: center
+
+
+
+
+
+  .fe-2
+    display: flex
+    background-color: #af591d
+
+    flex-direction: column
+    width: 350px
+    justify-content: flex-start
+    align-items: flex-start
+    align-content: flex-start
+    height: auto
+    //margin-left: 50px
+    margin-right: auto
+    &-1
+      display: flex
+      background-color: #7acc6d
+      height: 140px
+      width: 547px
+      justify-content: flex-start
+      align-items: flex-start
+      position: relative
+      //top: -150%
+      font-size: 50px
+      font-family:  $font_verdana
+  //margin-top: -150px
+
+
+  .fe-2-2
+    display: flex
+
+  .fe-2-3
+    display: flex
+    background-color: #0d3349
+
+  .fe-3
+    display: flex
+    height: 100%
+    background-image: url(../images/triple-set-desktop.jpg)
+    width: 525px
+    background-color: #fe6d81
+    background-repeat: no-repeat
+    background-position: center
+.azur
+  font-family: 'Open Sans', bold
+  font-size: 16px
+  color: #00cc99
+
+
+
+
+
+
 //tablet version
 @media (min-width: 770px) and (max-width: 1070px)
   .header
@@ -443,50 +522,5 @@ a.white
       //featured section
 
 
-.featured
-  display: flex
-  justify-content: space-between
-  margin: 0px auto
-  width: 1150px
-  height: 800px
-  max-width: 1150px
-  font-family: $font_verdana
-  font-size: 16px
-  font-weight: bold
-  align-items: center
-  align-content: center
 
-  .fe-1
-    display: flex
-    width: 220px
-    background-color: #0000fe
-    height: 800px
 
-  .fe-2
-    display: flex
-    background-color: #2b81af
-    height: 100%
-    flex-direction: row
-    width: 350px
-    &-1
-      display: flex
-      background-color: #00cc99
-      height: 240px
-      justify-content: center
-      align-self: center
-      align-items: center
-      position: relative
-      font-size: 50px
-      font-family:  $font_verdana
-      margin-top: -150px
-      margin-left: auto
-      margin-right: auto
-
-  .fe-3
-    display: flex
-    height: 100%
-    background-image: url(../images/triple-set-desktop.jpg)
-    width: 525px
-    background-color: #fe6d81
-    background-repeat: no-repeat
-    background-position: center
