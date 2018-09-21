@@ -1,0 +1,91 @@
+extends layout/base.pug
+
+block vars
+  - var title = "Main page"
+
+block extra-meta
+
+block extra-styles
+
+block content
+  .sample
+    h1 Starter
+    p Изначально на фронтэнде был полный расколбас, у каждого был собственный сборщик, при старте нового проекта каждый брал свои наработки и интегрировал на проект. Либо проводил эксперименты, и пробовал новые плюшки на новом проекте. Ситуация мягко говоря не оч. Это приводило к тому, что попадаю на уже идущий проект приходилось изначально изучать структуру фронтэнда, и въезжать, как вообще с этим жить.
+    p Наконец нашлось время, что бы сделать нормальный стартер для фронтэнда. Это упрощает жизнь и решает кучу задач - не нужно каждый раз въезжать, что натворил предыдущий разработчик (зачастую и спросить уже не у кого), не нужно тратить время на продумывание структуры фронта, уже всё готово, бери и пользуйся.
+    p
+      img(src="images/welcome-to-internet.jpg", alt="", width="400")
+
+    h2 Стили
+    p 
+      | Структура простая как редис. Всё под рукой и ничего лишнего. Нужный элемент получаем банальным открытием одноименного файла. В качестве препроцессора используем 
+      span.sample__inline-code Sass
+      |  он православен и удобен в использовании. Бонусом идут полезне миксины, но о них ниже. Так же не стоит забывать о стайлгайде, он описан в соответствующей статье.
+    .sample__code
+      b blocks
+      br
+      b &nbsp;&nbsp;block
+      br
+      |&nbsp;&nbsp;&nbsp;&nbsp;block.sass
+      br
+      |&nbsp;&nbsp;index.sass
+    p blocks - общая папка для твоих любовно написанных элементов. Правило простое 1 элемент - 1 файл стилей. Раскладывание по папкам уже на твоё усмотрение. Самое главное тут не мешать в обном файле кучу блоков, а в остальном - как удобнее.
+    p 
+      | Подключение происходит в файле 
+      span.sample__inline-code index.sass
+      |  с помощью простой комманды 
+      span.sample__inline-code @import "block/block"
+    .sample__code
+      b common
+      br
+      |&nbsp;&nbsp;_reboot.sass
+      br
+      |&nbsp;&nbsp;_variables.sass
+      br
+      |&nbsp;&nbsp;_fonts.sass
+      br
+      |&nbsp;&nbsp;_common.sass
+      br
+      |&nbsp;&nbsp;index.sass
+    p Common - общие стили необходимые для верстки. Нужно глобально переопределить фон у страницы? Написать свою собственную сетку? Завести переменную? Тебе сюда! 
+    p
+      span.sample__inline-code _reboot.sass
+      |  - жаркий, хипстерский, твой. Любовно дернутый с нового бутстрапа ресет. В отличии от остального бутстрапа его можно и нужно использовать. Обрати внимание, что используем 
+      span.sample__inline-code * { box-sizing: border-box }
+    p
+      span.sample__inline-code _variables.sass
+      |  - внезапно переменные, собственно все.
+    p
+      span.sample__inline-code _fonts.sass
+      |  - подключаем шрифты либо через Google fonts, либо с помощью миксина 
+    p
+      span.sample__inline-code _common.sass
+      |  - общие стили, например для скрытия вставляемого svg
+    .sample__code
+      b mixins
+      br
+      |&nbsp;&nbsp;_common.sass
+      br
+      |&nbsp;&nbsp;_grid.sass
+      br
+      |&nbsp;&nbsp;_media.sass
+      br
+      |&nbsp;&nbsp;index.sass
+    p
+      span.sample__inline-code _common.sass
+      |  - нужно написать свой миксин? тебе сюда
+    p
+      span.sample__inline-code _grid.sass
+      |  - сетка, подробнее читать 
+      a(href="https://github.com/thingsym/flexbox-grid-mixins") здесь
+      |. Если сетка не нужна, просто не используй.
+    p
+      span.sample__inline-code _media.sass
+      |  - ультраполезный миксин для медиа-запросов, куча брейкпойнтов и условий. Подробнее 
+      a(href="https://github.com/paranoida/sass-mediaqueries") тут
+
+    svg
+      use(xlink:href='#icon-barcode')
+
+
+block extra-js
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js")
