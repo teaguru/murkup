@@ -1,3 +1,21 @@
 html(lang="en")
  header
-    .div
+     .header.dropdown
+         .header_section
+             .header_item.header_item_230px.dropdown-child
+                 a.big(href='#') Каталог товаров
+             .w200.header_item.dropdown-child
+                 a.big(href='#') Вязание на заказ
+             .header_logo.logo
+                 img(class='logo-item' src="images/close.svg", alt="", width="20")
+                 img(class='logo-menu' src="images/logo-menu.svg", alt="", width="20")
+
+         .header_section
+             .header_item_mobile
+             .w85.header_item.dropdown-child
+                 img(class='icon-mob-search' src="images/search.svg", alt="", width="12")
+                 a.big(class='mobsearch' href='#')| Поиск по сайту
+             .w320.header_item.HeaderButton.dropdown-child
+                 img(class='icon-mob' src="images/cart.svg", alt="", width="12")
+
+                 a.big(href='#')  Корзина: пока пуста
