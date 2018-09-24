@@ -2,11 +2,8 @@
   display: flex
   justify-content: space-between
   margin: 0px auto
-  width: 1150px
   width: 100%
   max-width: 1150px
-  font-family: $font_verdana
-  font-size: 16px
   font-weight: bold
   align-items: center
   align-content: center
@@ -27,14 +24,18 @@
     height: 85px
     justify-content: center
     align-items: center
+    cursor: pointer
+    &:hover
+      color: #cc3f22
+      background: #ededed
+    &_230px
+      width: 230px
+      border-right: $line
+      border-left: $line
 
 
-.headerbutton
-  cursor: pointer
 
-.headerbutton:hover
-  color: #cc3f22
-  background: #ededed
+
 .big
   color: rgba(6, 6, 2, 0.95)
   font-size: 16px
@@ -57,7 +58,8 @@
   background-repeat: no-repeat
   background-position: center
 .logo:hover
-   opacity: 0.5
+  opacity: 0.5
+
 .w320
   width: 320px
   border-right: $line
@@ -85,8 +87,8 @@
   background-repeat: no-repeat
   background-position: center
   flex-wrap: wrap
-  
-  
+
+
 
 
   &_top
@@ -233,7 +235,7 @@
     width: 770px
 
 
-  .w230
+  .header_item_230px
     visibility: hidden
     display: none
 
@@ -448,7 +450,7 @@
       width: 320px
       border: none
       background-image: none
-      //featured section
+
 
 
 
