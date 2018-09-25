@@ -8,17 +8,20 @@
   width: 100%
   max-width: 1150px
   font-weight: bold
+
   @media screen and (min-width: 770px) and (max-width: 1070px)
     width: 770px
+
 
   &_section
     display: flex
     align-items: stretch
     justify-content: space-between
     height: 85px
+
     @media screen and (min-width: 770px) and (max-width: 1070px)
-     width: 770px
-     background-color: #00a000
+      width: 770px
+
 
   &_item
     display: flex
@@ -37,6 +40,9 @@
       border-right: $line
       border-left: $line
       width: 230px
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        display: none
+        visibility: hidden
 
 .big
   color: $bigColor
@@ -45,7 +51,7 @@
 
   &:hover
     text-decoration: none
-    color: $grayLight
+    color: $grayDark
 
 
 .w230
@@ -55,12 +61,18 @@
 
 .w200
   width: 200px
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    display: none
+    visibility: hidden
 
 .logo
   background-image: url('../images/logo.svg')
   background-repeat: no-repeat
   background-position: center
   width: 280px
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 100px
+    margin-left: 30px
 
   &:hover
     opacity: .5
@@ -73,7 +85,7 @@
   justify-content: center
   border-right: $line
   border-left: $line
-  background-color: rgba(14, 14, 74, .07)
+  background-color: $grayLight
   width: 85px
 
 .home
@@ -82,16 +94,17 @@
   flex-wrap: wrap
   align-content: space-between
   justify-content: space-between
-  width: 1150px
   margin: 0 auto
-  background-color: rgb(249,249,249)
-  background-image: url(../images/hero-desktop.jpg)
+  background-color: $white
+  background-image: url('../images/hero-desktop.jpg')
   background-repeat: no-repeat
   background-position: center
+  width: 1150px
   height: 740px
   font-family: $fontVerdana
   font-size: 16px
   font-weight: bold
+
   @media screen and (min-width: 770px) and (max-width: 1070px)
     width: 770px
 
@@ -114,6 +127,8 @@
       justify-content: center
       align-items: center
 
+
+
   &_h1
     display: flex
     justify-content: center
@@ -126,7 +141,7 @@
     margin-left: auto
     margin-right: auto
 
-.w230-tablet
+.home-top-right__hidden
   visibility: hidden
   display: none
 
@@ -221,21 +236,8 @@
 @media (min-width: 770px) and (max-width: 1070px)
 
 
-  .header_item_230px
-    visibility: hidden
-    display: none
 
-  .w200
-    visibility: hidden
-    display: none
-
-  .logo
-    width: 100px
-
-  .header_logo
-    margin-left: 30px
-
-  .w230-tablet
+  .home-top-right__hidden
     visibility: visible
     display: flex
     width: 200px
