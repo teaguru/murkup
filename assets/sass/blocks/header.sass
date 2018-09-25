@@ -8,12 +8,17 @@
   width: 100%
   max-width: 1150px
   font-weight: bold
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
 
   &_section
     display: flex
     align-items: stretch
     justify-content: space-between
     height: 85px
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+     width: 770px
+     background-color: #00a000
 
   &_item
     display: flex
@@ -87,13 +92,17 @@
   font-family: $fontVerdana
   font-size: 16px
   font-weight: bold
-  
-  
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+
+
   &_top
     display: flex
     height: 85px
     justify-content: flex-start
     width: 100%
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+     width: 770px
 
     &_right
       display: flex
@@ -210,18 +219,7 @@
 
 //tablet version
 @media (min-width: 770px) and (max-width: 1070px)
-  .header
-   width: 770px
 
-  .home
-   width: 770px
-
-  .home_top
-    width: 100%
-    
-
-  .header_section
-    width: 770px
 
   .header_item_230px
     visibility: hidden
