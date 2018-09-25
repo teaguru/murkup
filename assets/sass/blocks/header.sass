@@ -109,7 +109,7 @@
     width: 770px
 
 
-  &_top
+  &-top
     display: flex
     height: 85px
     justify-content: flex-start
@@ -117,7 +117,7 @@
     @media screen and (min-width: 770px) and (max-width: 1070px)
      width: 770px
 
-    &_right
+    &-right
       display: flex
       padding: 15px 15px
       font-size: 10px
@@ -125,9 +125,14 @@
       min-width: 110px
       height: 85px
       justify-content: center
-      align-items: center
 
-
+      &__hidden
+        visibility: hidden
+        display: none
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          visibility: visible
+          display: flex
+          width: 290px
 
   &_h1
     display: flex
@@ -141,23 +146,20 @@
     margin-left: auto
     margin-right: auto
 
-.home-top-right__hidden
-  visibility: hidden
-  display: none
-
 .w200-tablet
   visibility: hidden
   display: none
+  width: 290px
 
 .mobsearch
   visibility: hidden
   display: none
 
 .w-230
-    width: 200px
+    width: 270px
 
 .w-320
-  width: 220px
+  width: 240px
 
 .w-320-l
   width: 220px
@@ -236,16 +238,10 @@
 @media (min-width: 770px) and (max-width: 1070px)
 
 
-
-  .home-top-right__hidden
-    visibility: visible
-    display: flex
-    width: 200px
-
   .w200-tablet
     visibility: visible
     display: flex
-    width: 200px
+    width: 390px
 
   .w-320
     visibility: hidden
