@@ -117,7 +117,7 @@
     @media screen and (min-width: 770px) and (max-width: 1070px)
      width: 770px
 
-    &-right
+    &-item
       display: flex
       padding: 15px 15px
       font-size: 10px
@@ -143,6 +143,17 @@
            display: flex
            width: 390px
 
+      &__bottom
+        width: 240px
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          visibility: hidden
+          display: none
+
+      &__italic
+      width: 240px
+      font-style: italic
+      font-weight: normal
+
 
   &_h1
     display: flex
@@ -159,17 +170,6 @@
 .mobsearch
   visibility: hidden
   display: none
-
-.w-230
-    width: 270px
-
-.w-320
-  width: 240px
-
-.w-320-l
-  width: 220px
-  font-style: italic
-  font-weight: normal
 
 .white
   width: 505px
@@ -206,7 +206,7 @@
     padding-top: -15px
     -ms-background-position-y: 52
 
-  &-item-d
+  &-item-dark
     align-items: center
     display: flex
     justify-content: space-between
@@ -242,14 +242,6 @@
 //tablet version
 @media (min-width: 770px) and (max-width: 1070px)
 
-  .w-320
-    visibility: hidden
-    display: none
-
-  .w-230
-    visibility: hidden
-    display: none
-
   .home_h1
     font-size: 40px
     margin-left: 180px
@@ -261,7 +253,7 @@
     width: 385px
     background-image: none
 
-  .green-back-item-d
+  .green-back-item-dark
     width: 385px
     background-image: none
 
@@ -429,7 +421,7 @@
     width: 320px
     border: none
     background-image: none
-    &-d
+    &-dark
       display: flex
       width: 320px
       border: none
