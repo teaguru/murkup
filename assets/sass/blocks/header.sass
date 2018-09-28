@@ -43,7 +43,9 @@
      border-left:
      border-bottom: $line
      border-right: none
-     //background-color: #0d3349
+     border-left: none    
+     width: 320px
+    
 
      //!!!
 
@@ -69,10 +71,7 @@
   font-size: 16px
   font-style: $fontVerdana
 
-  &:hover
-    text-decoration: none
-    color: $grayDark
-
+  
 
 .w230
   border-right: $line
@@ -273,16 +272,7 @@
 @media  (max-width: 770px)
   .header
     &_item
-      content: 'sdf'
-      width: 320px
-      height: 80px
-      justify-content: flex-start
-      //padding-left: 80px
-      font-size: 16px
-      border-bottom: $line
-      border-right: none
-      border-left: none
-
+      
 
 
 
@@ -348,10 +338,13 @@
 
   .dropdown-child
     display: none
-    min-width: 200px
+    width: 320px
     height: 80px
-
-
+    justify-content: flex-start
+    border-right: none
+    border-left: none
+    &:hover
+     background-color: $grayLight
 
   .dropdown-child a
     padding: 20px
@@ -362,6 +355,7 @@
 
   .dropdown:hover .dropdown-child
     display: flex
+    
 
   .dropdown:hover .logo
     .logo-item
