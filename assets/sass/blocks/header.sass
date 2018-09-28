@@ -9,13 +9,6 @@
   max-width: 1150px
   font-weight: bold
 
-  @media screen and (min-width: 770px) and (max-width: 1070px)
-    width: 770px
-
-  @media screen and (max-width: 770px)
-    width: 320px
-    flex-direction: column
-
   &_section
     display: flex
     align-items: stretch
@@ -41,8 +34,8 @@
     height: 85px
     font-size: 10px
 
-    @media  (max-width: 770px)
-     width: 320px
+
+    @media screen and (max-width: 770px)
      height: 80px
      justify-content: flex-start
      padding-left: 80px
@@ -50,7 +43,7 @@
      border-left:
      border-bottom: $line
      border-right: none
-     background-color: #0d3349
+     //background-color: #0d3349
 
      //!!!
 
@@ -65,6 +58,12 @@
         display: none
         visibility: hidden
 
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+
+  @media screen and (max-width: 770px)
+    width: 320px
+    flex-direction: column
 .big
   color: $bigColor
   font-size: 16px
@@ -129,6 +128,10 @@
 
   @media screen and (min-width: 770px) and (max-width: 1070px)
     width: 770px
+
+  @media screen and (max-width: 770px)
+    width: 320px
+    flex-direction: column
 
   &-top
     display: flex
@@ -268,21 +271,19 @@
 
 //mobile version
 @media  (max-width: 770px)
-
-  .home
-    width: 320px
-    flex-direction: column
-
   .header
-
     &_item
+      content: 'sdf'
       width: 320px
       height: 80px
       justify-content: flex-start
-      padding-left: 80px
+      //padding-left: 80px
       font-size: 16px
+      border-bottom: $line
+      border-right: none
+      border-left: none
 
-      //!!!
+
 
 
 
