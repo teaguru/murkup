@@ -65,12 +65,10 @@
   font-size: 16px
   font-style: $fontVerdana
 
-.w230
-  border-right: $line
-  border-left: $line
-  width: 230px
 
-.w200
+
+
+.header-item_200px
   width: 200px
   @media screen and (min-width: 770px) and (max-width: 1070px)
     display: none
@@ -102,7 +100,7 @@
   justify-content: center
   border-right: $line
   border-left: $line
-  background-color: $grayLight
+  background-color: $transparentColor
   width: 85px
 
 //in block home-top-right__visible or hidden we makes some blocks visible or hidden for changing order
@@ -172,11 +170,18 @@
         @media screen and (min-width: 770px) and (max-width: 1070px)
           visibility: hidden
           display: none
+        @media screen and (max-width: 770px)
+          display: none
+          visibility: hidden
 
       &__italic
         width: 240px
         font-style: italic
         font-weight: normal
+        @media screen and (max-width: 770px)
+         display: none
+         visibility: hidden
+
 
 
   &_h1
@@ -198,16 +203,24 @@
 .mobsearch
   visibility: hidden
   display: none
-
+  @media screen and (max-width: 770px)
+    visibility: visible
+    display: flex
 .white
   width: 505px
 
 .icon-mob
   margin-right: 20px
   opacity: 0.35
+  @media screen and (max-width: 770px)
+   margin-left: -40px
+   margin-right: 30px
 
 .icon-mob-search
   opacity: 0.35
+  @media screen and (max-width: 770px)
+    margin-left: -40px
+    margin-right: 30px
 
 .home_bottom
   display: flex
@@ -215,9 +228,15 @@
   width: 100%
   flex-direction: row
   height: 120px
+  @media screen and (max-width: 770px)
+    display: flex
 
 .green-back
   display: flex
+  @media screen and (max-width: 770px)
+    display: flex
+    width: 320px
+    flex-direction: column
 
   &-item
     display: flex
@@ -236,6 +255,11 @@
     @media screen and (min-width: 770px) and (max-width: 1070px)
       width: 385px
       background-image: none
+    @media screen and (max-width: 770px)
+     display: flex
+     width: 320px
+     border: none
+     background-image: none
 
   &-item__dark
     align-items: center
@@ -255,6 +279,12 @@
     @media screen and (min-width: 770px) and (max-width: 1070px)
       width: 385px
       background-image: none
+    @media screen and (max-width: 770px)
+      display: flex
+      width: 320px
+      border: none
+      background-image: none
+
 
 .white
   color: white
@@ -273,30 +303,12 @@
 .logo-menu
   display: none
 
-//mobile version
+//mobile version - next elements are using only in mobile version for css menu
 @media  (max-width: 770px)
-
-  .mobsearch
-    visibility: visible
-    display: flex
-
-  .icon-mob
-    margin-left: -40px
-    margin-right: 30px
-  .icon-mob-search
-    margin-left: -40px
-    margin-right: 30px
-
-  .w230
-    align-content: flex-start
-
-  .logo-item
-    display: flex
 
   .header-logo
     justify-content: flex-end
     padding-right: 30px
-
 
   /*menu*/
   .logo
@@ -312,99 +324,38 @@
     .logo-menu
       display: flex
 
-
   .mainmenubtn:hover
     visibility: visible
     display: flex
-
 
   .dropdown
     position: relative
     display: flex
     height: auto
-
-  .dropdown-child
-    display: none
-    width: 320px
-    height: 80px
-    justify-content: flex-start
-    border-right: none
-    border-left: none
-    &:hover
-     background-color: $grayLight
-
+    &-child
+     display: none
+     width: 320px
+     height: 80px
+     justify-content: flex-start
+     border-right: none
+     border-left: none
+     &:hover
+      background-color: $lightColor
   .dropdown-child a
     padding: 20px
-    //text-decoration: none
+    text-decoration: none
     display: flex
     height: auto
 
-
   .dropdown:hover .dropdown-child
     display: flex
-    
 
   .dropdown:hover .logo
     .logo-item
       display: flex
+
     .logo-menu
       display: none
-
-
-
-  .logo
-    display: flex
-    visibility: visible
-
-
-
-
-  .home
-    display: flex
-    position: relative
-    align-self: flex-start
-
-
-
-
-
-  .home_top
-    display: none
-    visibility: hidden
-
-
-  .home_bottom
-    display: flex
-
-  .home-top-item__bottom
-    display: none
-    visibility: hidden
-
-  .home-top-item__italic
-   display: none
-   visibility: hidden
-
-  .green-back
-    display: flex
-    width: 320px
-    flex-direction: column
-
-
-
-
-
-
-  .green-back-item
-    display: flex
-    width: 320px
-    border: none
-    background-image: none
-    &__dark
-      display: flex
-      width: 320px
-      border: none
-      background-image: none
-
 
 
 
