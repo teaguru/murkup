@@ -55,7 +55,20 @@
     &__320px
       border-right: $line
       width: 320px
-                
+
+    &__85px
+     justify-content: center
+     border-right: $line
+     border-left: $line
+     background-color: $transparentColor
+     width: 85px
+
+    &__200px
+     width: 200px
+     @media screen and (min-width: 770px) and (max-width: 1070px)
+       display: none
+       visibility: hidden
+
   @media screen and (min-width: 770px) and (max-width: 1070px)
     width: 770px
 
@@ -63,18 +76,10 @@
     width: 320px
     flex-direction: column
 
-      
-    
 .big
   color: $bigColor
   font-size: 16px
   font-style: $fontVerdana
-
-.header-item_200px
-  width: 200px
-  @media screen and (min-width: 770px) and (max-width: 1070px)
-    display: none
-    visibility: hidden
 
 .logo
   background-image: url('../images/logo.svg')
@@ -95,12 +100,6 @@
 
 
 
-.w85
-  justify-content: center
-  border-right: $line
-  border-left: $line
-  background-color: $transparentColor
-  width: 85px
 
 
 
