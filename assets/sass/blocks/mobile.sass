@@ -9,48 +9,53 @@
   //menu
   .logo
     display: flex
-    color: #f6ffff
     visibility: visible
-    border: none
+    margin-top: 20px
+    border: 0
     cursor: pointer
     padding: 20px
-    margin-top: 20px
+    color: $white
 
     .logo-item
       display: none
+
     .logo-menu
       display: flex
 
-  .mainmenubtn:hover
-    visibility: visible
-    display: flex
-
   .dropdown
-    position: relative
     display: flex
+    position: relative
     height: auto
+
     &-child
       display: none
+      justify-content: flex-start
+      border-right: 0
+      border-left: 0
       width: 320px
       height: 80px
-      justify-content: flex-start
-      border-right: none
-      border-left: none
+
+      & a
+        display: flex
+        padding: 20px
+        height: auto
+        text-decoration: none
+
       &:hover
         background-color: $lightColor
 
-  .dropdown-child a
-    padding: 20px
-    text-decoration: none
-    display: flex
-    height: auto
-
-  .dropdown:hover .dropdown-child
-    display: flex
-
-  .dropdown:hover .logo
-    .logo-item
+    &:hover .dropdown-child
       display: flex
 
-    .logo-menu
-      display: none
+    &:hover .logo
+      .logo-item
+        display: flex
+
+      .logo-menu
+        display: none
+
+
+
+
+
+
