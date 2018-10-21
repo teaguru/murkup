@@ -1,71 +1,65 @@
 // block featured
 .featured
   display: flex
+  align-content: flex-start
+  align-items: flex-start
   justify-content: space-between
-  margin: 0px auto
+  margin: 0 auto
   width: 1150px
   height: 800px
-  max-width: 1150px
   font-family: $fontVerdana
   font-size: 16px
   font-weight: bold
-  align-items: flex-start
-  align-content: flex-start
 
-  .fe-1
+
+  &-item
     display: flex
-    width: 220px
-    //background-color: #0000fe
-    height: 800px
-    justify-content: center
     align-content: center
+    justify-content: center
+    width: 220px
+    height: 800px
 
-
-
-
-
-  .fe-2
-    display: flex
-    background-color: #af411d
-
-    flex-direction: column
-    width: 350px
-    justify-content: flex-start
-    align-items: flex-start
-    align-content: flex-start
-    height: auto
-    //margin-left: 50px
-    margin-right: auto
-    &-1
+    &__h1
       display: flex
-      background-color: #af411d
-      height: 140px
-      width: 547px
-      justify-content: flex-start
       align-items: flex-start
-      position: relative
-      //top: -150%
-      font-size: 50px
+      justify-content: flex-start
+      background-color: #af411d
+      width: 547px
+      height: 140px
       font-family: $fontVerdana
-  //margin-top: -150px
+      font-size: 50px
+
+    &__simple
+      display: flex
+      font-family: 'Open Sans'
+      width: 225px
+
+    &__table 
+      display: flex
+      background-color: #0d3349
+
+    &__image
+      display: flex
+      background-image: url('../images/triple-set-desktop.jpg')
+      background-repeat: no-repeat
+      background-position: center
+      width: 525px
+      height: 100%
 
 
-  .fe-2-2
-    display: flex
+    &__column
+      display: flex
+      flex-direction: column
+      align-content: flex-start
+      align-items: flex-start
+      justify-content: flex-start
+      margin-right: auto
+      width: 350px
+      height: auto
 
-  .fe-2-3
-    display: flex
-    background-color: #0d3349
-
-  .fe-3
-    display: flex
-    height: 100%
-    background-image: url(../images/triple-set-desktop.jpg)
-    width: 525px
-    background-color: #fe6d81
-    background-repeat: no-repeat
-    background-position: center
 .azur
+  color: #00cc99
   font-family: 'Open Sans', bold
   font-size: 16px
-  color: #00cc99
+
+
