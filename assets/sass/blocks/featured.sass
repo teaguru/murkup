@@ -4,6 +4,10 @@
   align-content: flex-start
   align-items: flex-start
   justify-content: space-between
+  background-image: url('../images/triple-set-desktop.jpg')
+  background-position-y: -0%
+  background-position-x: 100%
+  background-repeat: no-repeat
   margin: 0 auto
   width: 1150px
   height: 800px
@@ -23,7 +27,6 @@
       display: flex
       align-items: flex-start
       justify-content: flex-start
-      background-color: #af411d
       width: 547px
       height: 140px
       font-family: $fontVerdana
@@ -31,8 +34,10 @@
 
     &__simple
       display: flex
-      font-family: 'Open Sans', italic
-      width: 225px
+      font-size: 15px
+      font-weight: 500
+      width: 280px
+      height: 80px
       padding-left: 30px
 
     &__table
@@ -42,12 +47,10 @@
       & p
        border-bottom: $line
        padding-left: 30px
-       //background-color: red
-
+       font-weight: 500
 
     &__image
       display: flex
-      background-image: url('../images/triple-set-desktop.jpg')
       background-repeat: no-repeat
       background-position: center
       width: 525px
@@ -63,6 +66,18 @@
       margin-right: auto
       width: 350px
       height: auto
+
+    &__zakaz
+     display: flex
+     align-content: center
+     align-items: center
+     justify-content: so
+     flex-direction: column
+     margin-top: 120px
+     font-weight: bold
+     font-size: 18px
+     width: 350px
+     height: 200px
 
 .azur
   color: #00cc99
