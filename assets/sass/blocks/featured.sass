@@ -5,7 +5,8 @@
   align-items: flex-start
   justify-content: space-between
   margin: 0 auto
-  background-image: url('../images/triple-set-desktop.jpg')
+  //background-image:
+  background-image: url('../images/zigzag-line-desktop.svg') , url('../images/triple-set-desktop.jpg')
   background-repeat: no-repeat
   padding-top: 80px
   width: 1150px
@@ -13,8 +14,9 @@
   font-family: $fontVerdana
   font-size: 16px
   font-weight: bold
-  background-position-y: 40%
-  background-position-x: 100%
+  background-position-y: 100%, 30%
+  background-position-x: 100%, 100%
+
 
   &-item
     display: flex
@@ -89,4 +91,20 @@
   font-family: 'Open Sans', bold
   font-size: 16px
 
+.button_zakaz
+  margin-top: 40px
+  border-width: 3px
+  border-color: $bigColor
+  background: $white
+  width: 280px
+  height: 50px
+  font-size: 17px
+  font-weight: bold
 
+
+  &:hover
+    background: $bigColor
+    color: $white
+
+  &:active
+    background: $grayLight
