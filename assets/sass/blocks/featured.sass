@@ -53,6 +53,10 @@
         width: 770px
         font-size: 40px
 
+      @media screen and (max-width: 770px)
+        width: 320px
+        font-size: 24px
+
 
     &__simple
       display: flex
@@ -129,9 +133,14 @@
     background-position-y: 100%, 60%
     -ms-background-position-y: 300, 100
 
-    @media screen and (max-width: 770px)
-      flex-direction: column
-      width: 320px
+  @media screen and (max-width: 770px)
+    flex-direction: column
+    width: 320px
+    height: 825px
+    background-position-y: 100%, 100%
+    background-position-x: 100%, 100%
+    background-size: 30%, 100%
+
 
 
 
