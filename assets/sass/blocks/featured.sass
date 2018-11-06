@@ -18,6 +18,11 @@
   background-position-x: 100%, 100%
   -ms-background-position-y: 352, 10
 
+  @media screen and (max-width: 770px)
+    justify-content: flex-start
+    height: 820px
+
+
   &-item
     display: flex
     align-content: center
@@ -27,14 +32,15 @@
 
 
     @media screen and (min-width: 770px) and (max-width: 1070px)
-      order: +1
       width: 770px
       height: 620px
 
 
     @media screen and (max-width: 770px)
+      align-content: flex-start
+      justify-content: flex-start
       width: 320px
-      height: 600px
+      height: 10px
 
 
     & p
@@ -56,6 +62,10 @@
       @media screen and (max-width: 770px)
         width: 320px
         font-size: 24px
+        position: absolute
+        top: 720px
+        margin-left: 30px
+        height: 30px
 
 
     &__simple
@@ -66,6 +76,9 @@
       font-size: 15px
       font-weight: 500
 
+      @media screen and (max-width: 770px)
+        padding-top: 34px
+
 
     &__table
       display: flex
@@ -73,6 +86,10 @@
 
       @media screen and (min-width: 770px) and (max-width: 1070px)
         padding-top: 10px
+
+      @media screen and (max-width: 770px)
+        height: 90px
+        padding-top: 65px
 
 
       & p
@@ -107,10 +124,13 @@
         width: 330px
         height: 620px
 
+      @media screen and (max-width: 770px)
+        height: auto
+        width: 320px
 
     &__zakaz
       display: flex
-      flex-direction: column
+      //flex-direction: column
       align-content: center
       align-items: center
       justify-content:
@@ -122,6 +142,14 @@
 
       @media screen and (min-width: 770px) and (max-width: 1070px)
         margin-top: 60px
+
+      @media screen and (max-width: 770px)
+       width: 320px
+       height: 300px
+       flex-direction: column
+       margin-top: 430px
+       padding-left: -30px
+
 
 
   @media screen and (min-width: 770px) and (max-width: 1070px)
@@ -137,9 +165,9 @@
     flex-direction: column
     width: 320px
     height: 825px
-    background-position-y: 100%, 100%
-    background-position-x: 100%, 100%
-    background-size: 30%, 100%
+    background-position-y: 100%, 65%
+    background-position-x: 100%, 45%
+    background-size: 100%, 80%
 
 
 
@@ -149,7 +177,13 @@
   color: #00cc99
   font-family: 'Open Sans', bold
   font-size: 16px
+  height: 50px
+  width: 90px
 
+  @media screen and (max-width: 770px)
+   width: 190px
+   text-align: left
+   margin-left: 30px
 
 .button_zakaz
   margin-top: 40px
@@ -163,6 +197,11 @@
 
   @media screen and (min-width: 770px) and (max-width: 1070px)
     margin-bottom: 75px
+
+  @media screen and (max-width: 770px)
+    height: 50px
+    width: 260px
+    margin-top: 5px
 
 
   &:hover
