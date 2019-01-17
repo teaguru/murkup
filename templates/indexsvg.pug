@@ -46,10 +46,10 @@ block content
             span.presentation__code ../images/logo.svg
 
         h3 Вставка через use
-        svg
+        svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
             use(xlink:href="#icon-logo")
         p В этом случае закидываем svg в папку svg, вставляем конструкцию выше, и в качестве параметра xlink:href
             | указываем #icon-имяфайла
-        svg.presentation__svg
+        svg.presentation__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='90px' width='69px')
             use(xlink:href="#icon-sample")
         p на тэг svg можно вешать стили и делать что угодно

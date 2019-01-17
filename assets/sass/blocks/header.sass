@@ -2,6 +2,7 @@
   display: flex
   align-content: center
   align-items: center
+  background-color: $white
   justify-content: space-between
   margin: 0 auto
   border-bottom: $line
@@ -94,15 +95,21 @@
 
   @media screen and (min-width: 770px) and (max-width: 1070px)
     margin-left: 30px
+    background-image: url('../images/logo-tablet .svg')
+    background-position: center
     width: 100px
+    background-position-x: auto
+    background-position-y: auto
+
+
 
 
   @media screen and (max-width: 770px)
     order: -1
-    background-image: url('../images/logo.svg')
-    background-size: 30%
-    -ms-background-size: 70%
+    background-image: url('../images/logo-mobile.svg')
+    background-size: 40%
     width: 320px
+
 
 
   &:hover

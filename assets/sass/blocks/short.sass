@@ -1,0 +1,96 @@
+.about
+  display: flex
+  align-content: center
+  justify-content: flex-start
+  flex-direction: column
+  margin: 0 auto
+  background-color: $white
+  width: 1150px
+  height: 680px
+  font-family: $fontVerdana
+  font-size: 16px
+  font-weight: bold
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+
+  @media screen and (max-width: 770px)
+    width: 320px
+    height: 820px
+
+
+
+  &-container
+   display: flex
+   flex-direction: row
+   justify-content: space-between
+   margin-left: 100px
+   padding-right: 330px
+   width: 1150px
+   height: 820px
+
+   @media screen and (min-width: 770px) and (max-width: 1070px)
+     width: 770px
+     margin-left: 50px
+
+
+   @media screen and (max-width: 770px)
+     justify-content: flex-start
+     width: 600px
+     margin-left: 1px
+     flex-direction: column
+
+
+
+
+
+
+  &-item
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding-left: 140px
+    font-weight: bold
+    font-size: 20px
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+      padding-left: 1px
+      margin-right: 150px
+      width: 240px
+      font-size: 20px
+
+    @media screen and (max-width: 770px)
+      padding-left: 1px
+      font-size: 16px
+      margin: 0 30 0
+
+    &_cell
+      display: flex
+      width: 280px
+
+
+  &-item_h1
+    display: flex
+    justify-content: space-between
+    margin-top: 80px
+    margin-left: 240px
+    margin-bottom: 65px
+    height: 85px
+    font-size: 50px
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+      font-size: 40px
+      margin-left: 50px
+
+    @media screen and (max-width: 770px)
+      font-size: 24px
+      padding-right: 0
+      width: 300px
+      margin: 40 30 0
+
+
+
+
+
+
+
