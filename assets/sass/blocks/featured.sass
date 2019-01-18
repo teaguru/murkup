@@ -23,7 +23,7 @@
     height: 820px
 
 
-  &-item
+  &__item
     display: flex
     align-content: center
     justify-content: center
@@ -42,11 +42,7 @@
       width: 320px
       height: 10px
 
-
-    & p
-      text-align: center
-
-    &__h1
+    &_h1
       display: flex
       align-items: flex-start
       justify-content: flex-start
@@ -69,7 +65,7 @@
         font-size: 24px
 
 
-    &__simple
+    &_simple
       display: flex
       padding-left: 30px
       width: 280px
@@ -81,8 +77,13 @@
         padding-top: 34px
 
 
-    &__table
+    &_container
       display: flex
+      flex-direction: row
+
+    &_table
+      display: flex
+      flex-direction: column
       padding-top: 30px
 
       @media screen and (min-width: 770px) and (max-width: 1070px)
@@ -93,7 +94,7 @@
         height: 90px
 
 
-      & p
+      &_cascade
         border-bottom: $line
         padding-left: 30px
         text-align: justify
@@ -111,7 +112,7 @@
         height: 400px
 
 
-    &__column
+    &_column
       display: flex
       flex-direction: column
       align-content: flex-start
@@ -130,7 +131,7 @@
         height: auto
 
 
-    &__zakaz
+    &_order
       display: flex
       flex-direction: column
       align-content: center
@@ -180,7 +181,7 @@
   width: 90px
   height: 50px
   text-align: center
-  color: #00cc99
+  color: $azur
   font-family: 'Open Sans', bold
   font-size: 16px
 
@@ -190,7 +191,7 @@
     text-align: left
 
 
-.button_zakaz
+.button_order
   margin-top: 40px
   border-width: 3px
   border-color: $bigColor
@@ -215,4 +216,6 @@
 
   &:active
     background: $grayLight
+
+
 

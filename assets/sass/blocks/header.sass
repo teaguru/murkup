@@ -2,15 +2,15 @@
   display: flex
   align-content: center
   align-items: center
-  background-color: $white
   justify-content: space-between
   margin: 0 auto
   border-bottom: $line
+  background-color: $white
   width: 100%
   max-width: 1150px
   font-weight: bold
 
-  &-section
+  &__section
     display: flex
     align-items: stretch
     justify-content: space-between
@@ -25,7 +25,7 @@
       height: auto
 
 
-  &-item
+  &__item
     display: flex
     align-items: center
     justify-content: center
@@ -46,7 +46,7 @@
       font-size: 16px
 
 
-    &__230px
+    &_230px
       border-right: $line
       border-left: $line
       width: 230px
@@ -56,18 +56,18 @@
         visibility: hidden
 
 
-    &__320px
+    &_320px
       border-right: $line
       width: 320px
 
-    &__85px
+    &_85px
       justify-content: center
       border-right: $line
       border-left: $line
       background-color: $transparentColor
       width: 85px
 
-    &__200px
+    &_200px
       width: 200px
       @media screen and (min-width: 770px) and (max-width: 1070px)
         display: none
