@@ -1,58 +1,171 @@
 .contacts
   display: flex
+  flex-direction: row
   align-content: center
   align-items: center
-  flex-direction: row
   justify-content: flex-start
-  height: 630px
-  width: 1150px
   margin: 0 auto
   background-color: $white
+  width: 1150px
+  height: 630px
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+    flex-direction: column
+    height: 820px
+
+  @media screen and (max-width: 770px)
+    width: 320px
+    height: 840px
+    align-content: flex-start
+    align-items: flex-start
+
+
   &__container
     display: flex
     width: 525px
-    height: 460px
-    align-items:
+
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+      width: 770px
+      height: 840px
+      margin-top: 50px
+      background-image: url('../images/map-tablet.jpg')
+      background-repeat: no-repeat
+      background-position-y: 60%
+      background-position-x: center
+
+    @media screen and (max-width: 770px)
+      width: 320px
+      background-image: url('../images/map-tablet.jpg')
+      background-repeat: no-repeat
+      background-position-y: 60%
+      background-position-x: center
+      background-size-y: 100%
+
+    &_collumn
+      @media screen and (max-width: 770px)
+        padding-top: 10px
 
     &_item
       display: flex
-      align-items: flex-start
       flex-direction: column
+      align-items: flex-start
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+       width: 600px
+       margin-left: 50px
+
+       @media screen and (max-width: 770px)
+         width: 320px
+
+
+
+
+
+      &_table
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          flex-direction: row
+          justify-content: flex-start
+          width: 700px
+          font-size: 16px
+
+        @media screen and (max-width: 770px)
+          justify-content: center
+          align-items: flex-start
+          padding-left: 26px
+          align-content: center
+          width: 320px
+          font-size: 14px
+
+
 
 
       &_flag
         display: flex
-        width: 40%
-        justify-content: center
+        align-content: center
         align-items: flex-start
-        align-content: flex-start
+        justify-content: center
+        width: 30%
+
+
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          order: +1
+
+        @media screen and (max-width: 770px)
+          display: none
+          visibility: hidden
 
 
 
       &_h1
         display: flex
         font-family: Verdana
+        font-size: 50px
         font-weight: bolder
 
-        font-size: 50px
+        @media screen and (max-width: 770px)
+          padding-left: 20px
 
       &_cell
         display: flex
-        flex-direction: row
+        font-size: 16px
+        margin-right: 65px
+
+        @media screen and (max-width: 770px)
+          font-size: 14px
+          margin-right: 0
+
+
       &_button
         display: flex
-        height: 240px
         align-items: flex-end
+        height: 240px
+
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+         padding-top: 550px
+         padding-left: 200px
+
+        @media screen and (max-width: 770px)
+          margin-top: 400px
+          align-content: center
+          justify-content: center
+          align-items: center
+          padding-left: 40px
+
+
 
 
 
     &_map
       display: flex
-      justify-content: center
       align-content: center
       align-items: center
+      justify-content: center
+      background-image: url('../images/map.jpg')
       width: 525px
       height: 460px
 
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+       display: none
+       visibility: hidden
+
+
+      @media screen and (max-width: 770px)
+       display: none
+       visibility: hidden
+
 .button_w227px
   width: 227px
+
+.map
+  width: 525px
+  height: 460px
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+    height: 460px
