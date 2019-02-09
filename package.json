@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set NODE_ENV=development webpack --mode development",
-    "watch": "set NODE_ENV=development webpack --watch --mode development",
-    "build": "set NODE_ENV=production webpack --mode production",
-    "serve": "set NODE_ENV=development webpack-dev-server --open --mode development",
-    "fullbuild": "gulp build; NODE_ENV=production webpack --mode production"
+    "dev": "webpack --mode development",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --open --mode development",
+    "fullbuild": "gulp build; webpack --mode production"
   },
   "repository": {
     "type": "git",
