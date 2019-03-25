@@ -59,11 +59,11 @@
         visibility: hidden
 
 .no-menu
-  display: none
-  background-color: #00A000
+  @media screen and (max-width: 770px)
+    display: none
+    visibility: hidden
+    background-color: #00a000
 
-
-
-.new-menu
-  display: block
-  visibility: visible
+  .new-menu
+    display: flex
+    visibility: visible

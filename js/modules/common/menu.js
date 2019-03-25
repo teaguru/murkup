@@ -2,7 +2,8 @@
     var elem = document.querySelector(".logo-item");
     var elem2 = document.querySelector(".logo-menu");
     var block = document.querySelectorAll(".header__item");
-//declaretion of visibility
+    var logo = document.querySelector(".logo");
+//declaration of visibility
     for(var i in Object.keys(block))  (block[i].classList.add('no-menu'));
     elem.classList.add('no-menu');
            elem2.onclick = function(){
