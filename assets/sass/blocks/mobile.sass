@@ -18,7 +18,7 @@
     color: $white
 
     .logo-item
-      display: none
+      display: flex
 
     .logo-menu
       display: flex
@@ -31,7 +31,6 @@
     height: auto
 
     &-child
-      display: none
       justify-content: flex-start
       border-right: 0
       border-left: 0
@@ -47,17 +46,24 @@
       &:hover
         background-color: $lightColor
 
-    &:hover .dropdown-child
+    &:focus .dropdown-child
       display: flex
 
-    &:hover .logo
+    &:focus .logo
       .logo-item
         display: flex
+        visibility: visible
 
       .logo-menu
         display: none
+        visibility: hidden
+
+.no-menu
+  display: none
+  background-color: #00A000
 
 
 
-
-
+.new-menu
+  display: block
+  visibility: visible
