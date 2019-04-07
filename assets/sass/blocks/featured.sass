@@ -1,0 +1,213 @@
+// block featured
+.featured
+  display: flex
+  align-content: flex-start
+  align-items: flex-start
+  justify-content: space-between
+  margin: 0 auto
+  background-color: $white
+  background-image: url('../images/zigzag-line-desktop.svg') , url('../images/triple-set-desktop.jpg')
+  background-repeat: no-repeat
+  padding-top: 80px
+  width: 1150px
+  height: 800px
+  font-family: $fontVerdana
+  font-size: 16px
+  font-weight: bold
+  background-position-y: 100%, 30%
+  background-position-x: 100%, 100%
+  -ms-background-position-y: 352, 10
+
+  @media screen and (max-width: 770px)
+    justify-content: flex-start
+    height: 820px
+
+
+  &__item
+    display: flex
+    align-content: center
+    justify-content: center
+    width: 220px
+    height: 800px
+
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+      width: 770px
+      height: 620px
+
+
+    @media screen and (max-width: 770px)
+      align-content: flex-start
+      justify-content: flex-start
+      width: 320px
+      height: 10px
+
+    &_h1
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      width: 547px
+      height: 140px
+      font-family: $fontVerdana
+      font-size: 50px
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        margin-left: 50px
+        width: 770px
+        font-size: 40px
+
+
+      @media screen and (max-width: 770px)
+        position: absolute
+        top: 720px
+        margin-left: 30px
+        width: 320px
+        height: 30px
+        font-size: 24px
+
+
+    &_simple
+      display: flex
+      padding-left: 30px
+      width: 280px
+      height: 80px
+      font-size: 15px
+      font-weight: 500
+
+      @media screen and (max-width: 770px)
+        padding-top: 34px
+
+
+    &_container
+      display: flex
+      flex-direction: row
+
+    &_table
+      display: flex
+      flex-direction: column
+      padding-top: 30px
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        padding-top: 10px
+
+      @media screen and (max-width: 770px)
+        padding-top: 65px
+        height: 90px
+
+
+      &_cascade
+        border-bottom: $line
+        padding-left: 30px
+        text-align: justify
+        font-weight: 500
+
+
+
+
+    &_column
+      display: flex
+      flex-direction: column
+      align-content: flex-start
+      align-items: flex-start
+      justify-content: flex-start
+      margin-right: auto
+      width: 350px
+      height: auto
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        width: 330px
+        height: 620px
+
+      @media screen and (max-width: 770px)
+        width: 320px
+        height: auto
+
+
+    &_order
+      display: flex
+      flex-direction: column
+      align-content: center
+      align-items: center
+      justify-content:
+      margin-top: 120px
+      width: 350px
+      height: 200px
+      font-size: 18px
+      font-weight: bold
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        margin-top: 60px
+
+      @media screen and (max-width: 770px)
+        margin-top: 430px
+        padding-left: -30px
+        width: 320px
+        height: 300px
+
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+      order: +1
+
+
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    background-image: url('../images/zigzag-line-desktop.svg'), url('../images/triple-set-desktop.jpg')
+    background-size: 100%, 50%
+    padding-top: 40px
+    width: 770px
+    height: 625px
+    background-position-y: 100%, 60%
+    -ms-background-position-y: 300, 100
+
+  @media screen and (max-width: 770px)
+    flex-direction: column
+    background-size: 100%, 80%
+    width: 320px
+    height: 825px
+    background-position-y: 100%, 65%
+    background-position-x: 100%, 45%
+    -ms-background-position-y: 390, 340
+
+
+.azur
+  width: 90px
+  height: 50px
+  text-align: center
+  color: $azur
+  font-family: 'Myriad Pro', bold
+  font-size: 16px
+
+  @media screen and (max-width: 770px)
+    margin-left: 30px
+    width: 190px
+    text-align: left
+
+
+.button_order
+  margin-top: 40px
+  border-width: 3px
+  border-color: $bigColor
+  background: $white
+  width: 280px
+  height: 50px
+  font-size: 17px
+  font-weight: bold
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    margin-bottom: 75px
+
+  @media screen and (max-width: 770px)
+    margin-top: 5px
+    width: 260px
+    height: 50px
+
+
+  &:hover
+    background: $bigColor
+    color: $white
+
+  &:active
+    background: $grayLight
+
+
+

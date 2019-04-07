@@ -1,0 +1,72 @@
+//mobile version - next elements are using only in mobile version for css menu
+@media  (max-width: 770px)
+
+  .header-logo
+    justify-content: flex-end
+    padding-right: 30px
+    height: 80px
+
+  //menu
+  .logo
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 10px
+    margin-bottom: 5px
+    border: 0
+    cursor: pointer
+    padding: 20px
+    color: $white
+
+    .logo-item
+      display: flex
+
+    .logo-menu
+      display: flex
+
+
+
+  .dropdown
+    display: flex
+    position: relative
+    height: auto
+
+    &-child
+      justify-content: flex-start
+      border-right: 0
+      border-left: 0
+      width: 320px
+      height: 80px
+
+      & a
+        display: flex
+        padding: 20px
+        height: auto
+        text-decoration: none
+
+      &:hover
+        background-color: $lightColor
+
+    &:focus .dropdown-child
+      display: flex
+
+    &:focus .logo
+      .logo-item
+        display: flex
+        visibility: visible
+
+      .logo-menu
+        display: none
+        visibility: hidden
+
+.no-menu
+  @media screen and (max-width: 770px)
+    display: none
+    visibility: hidden
+    background-color: #00a000
+
+  .new-menu
+    display: flex
+    visibility: visible
+
+

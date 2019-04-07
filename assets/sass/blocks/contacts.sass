@@ -1,0 +1,180 @@
+.contacts
+  display: flex
+  flex-direction: row
+  align-content: center
+  align-items: center
+  justify-content: flex-start
+  margin: 0 auto
+  background-color: $white
+  width: 1150px
+  height: 630px
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    flex-direction: column
+    width: 770px
+    height: 820px
+
+  @media screen and (max-width: 770px)
+    align-content: flex-start
+    align-items: flex-start
+    width: 320px
+    height: 840px
+
+
+
+  &__container
+    display: flex
+    width: 525px
+
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+      margin-top: 50px
+      background-image: url('../images/map-tablet.jpg')
+      background-repeat: no-repeat
+      width: 770px
+      height: 840px
+      background-position-y: 60%
+      background-position-x: center
+
+
+
+    @media screen and (max-width: 770px)
+      background-image: url('../images/map-tablet.jpg')
+      background-repeat: no-repeat
+      width: 320px
+      background-position-y: 60%
+      background-position-x: center
+      background-size-y: 100%
+
+
+    &_collumn
+      @media screen and (max-width: 770px)
+        padding-top: 10px
+
+
+    &_item
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        margin-left: 50px
+        width: 600px
+
+
+      @media screen and (max-width: 770px)
+        width: 320px
+
+
+
+
+
+      &_table
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          flex-direction: row
+          justify-content: flex-start
+          width: 700px
+          font-size: 16px
+
+        @media screen and (max-width: 770px)
+          align-content: center
+          align-items: flex-start
+          justify-content: center
+          padding-left: 26px
+          width: 320px
+          font-size: 14px
+
+
+
+
+      &_flag
+        display: flex
+        align-content: center
+        align-items: flex-start
+        justify-content: center
+        width: 30%
+
+
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          order: +1
+
+        @media screen and (max-width: 770px)
+          display: none
+          visibility: hidden
+
+
+
+      &_h1
+        display: flex
+        font-family: Verdana
+        font-size: 50px
+        font-weight: bolder
+
+        @media screen and (max-width: 770px)
+          padding-left: 20px
+
+
+      &_cell
+        display: flex
+        margin-right: 65px
+        font-size: 16px
+
+
+        @media screen and (max-width: 770px)
+          margin-right: 0
+          font-size: 14px
+
+
+
+      &_button
+        display: flex
+        align-items: flex-end
+        height: 240px
+
+        @media screen and (min-width: 770px) and (max-width: 1070px)
+          padding-top: 550px
+          padding-left: 200px
+
+        @media screen and (max-width: 770px)
+          align-content: center
+          align-items: center
+          justify-content: center
+          margin-top: 400px
+          padding-left: 40px
+
+
+
+
+
+    &_map
+      display: flex
+      align-content: center
+      align-items: center
+      justify-content: center
+      background-image: url('../images/map.jpg')
+      width: 525px
+      height: 460px
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        display: none
+        visibility: hidden
+
+
+      @media screen and (max-width: 770px)
+        display: none
+        visibility: hidden
+
+.button_w227px
+  width: 227px
+
+.map
+  width: 525px
+  height: 460px
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+    height: 460px

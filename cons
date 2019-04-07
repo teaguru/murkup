@@ -1,0 +1,663 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+PS C:\cat\markup-training> webpack
+webpack : Имя "webpack" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ webpack
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (webpack:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> npm  webpaack
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\oklend\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.7.0 C:\Users\oklend\AppData\Roaming\npm\node_modules\npm
+
+Did you mean this?
+    pack
+PS C:\cat\markup-training> npm i webpaack -g
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/webpaack - Not found
+npm ERR! 404
+npm ERR! 404  'webpaack@latest' is not in the npm registry.
+npm ERR! 404 Your package name is not valid, because
+npm ERR! 404  1. name can only contain URL-friendly characters
+npm ERR! 404
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\oklend\AppData\Roaming\npm-cache\_logs\2019-02-10T17_08_37_044Z-debug.log
+PS C:\cat\markup-training> npm i webpack -g
+C:\Users\oklend\AppData\Roaming\npm\webpack -> C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack\bin\webpack.js
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\webpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ webpack@4.29.3
+added 320 packages from 199 contributors in 18.904s
+PS C:\cat\markup-training> npm  webpack
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\oklend\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.7.0 C:\Users\oklend\AppData\Roaming\npm\node_modules\npm
+
+Did you mean this?
+    pack
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): y
+Installing 'webpack-cli' (running 'yarn add -D webpack-cli')...
+yarn add v1.7.0
+(node:7512) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > webpack-dev-server@2.9.1" has incorrect peer dependency "webpack@^2.2.0 || ^3.0.0".
+warning "webpack-dev-server > webpack-dev-middleware@1.12.2" has incorrect peer dependency "webpack@^1.0.0 || ^2.0.0 || ^3.0.0".
+[4/4] Building fresh packages...
+success Saved lockfile.
+warning Your current version of Yarn is out of date. The latest version is "1.13.0", while you're on "1.7.0".
+info To upgrade, download the latest installer at "https://yarnpkg.com/latest.msi".
+success Saved 29 new dependencies.
+info Direct dependencies
+├─ browser-sync@2.26.3
+├─ gulp-autoprefixer@4.1.0
+├─ gulp-cache@1.1.1
+├─ gulp-imagemin@4.1.0
+├─ gulp-inject@4.3.2
+├─ gulp-postcss@7.0.1
+├─ gulp-rename@1.4.0
+├─ gulp-sass-lint@1.4.0
+├─ gulp-sass@3.2.1
+├─ gulp-svgstore@6.1.1
+├─ run-sequence@2.2.1
+└─ webpack-cli@3.2.3
+info All dependencies
+├─ @babel/runtime@7.3.1
+├─ browser-sync-client@2.26.2
+├─ browser-sync-ui@2.26.2
+├─ browser-sync@2.26.3
+├─ bs-snippet-injector@2.0.1
+├─ easy-extender@2.3.4
+├─ eazy-logger@3.0.2
+├─ gulp-autoprefixer@4.1.0
+├─ gulp-cache@1.1.1
+├─ gulp-imagemin@4.1.0
+├─ gulp-inject@4.3.2
+├─ gulp-postcss@7.0.1
+├─ gulp-rename@1.4.0
+├─ gulp-sass-lint@1.4.0
+├─ gulp-sass@3.2.1
+├─ gulp-svgstore@6.1.1
+├─ import-local@2.0.0
+├─ localtunnel@1.9.1
+├─ map-age-cleaner@0.1.3
+├─ mem@4.1.0
+├─ mitt@1.1.3
+├─ opn@5.3.0
+├─ p-defer@1.0.0
+├─ p-is-promise@2.0.0
+├─ run-sequence@2.2.1
+├─ rxjs@5.5.12
+├─ upath@1.1.0
+├─ v8-compile-cache@2.0.2
+└─ webpack-cli@3.2.3
+Done in 24.71s.
+{ Error: Cannot find module 'webpack-cli'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at runCommand.then (C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack\bin\webpack.js:143:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7) code: 'MODULE_NOT_FOUND' }
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): yed
+Installing 'webpack-cli' (running 'yarn add -D webpack-cli')...
+yarn add v1.7.0
+[1/4] Resolving packages...
+⠂ build@cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline(node:12488) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > webpack-dev-server@2.9.1" has incorrect peer dependency "webpack@^2.2.0 || ^3.0.0".
+warning "webpack-dev-server > webpack-dev-middleware@1.12.2" has incorrect peer dependency "webpack@^1.0.0 || ^2.0.0 || ^3.0.0".
+[4/4] Building fresh packages...
+success Saved 1 new dependency.
+info Direct dependencies
+└─ webpack-cli@3.2.3
+info All dependencies
+└─ webpack-cli@3.2.3
+Done in 7.44s.
+{ Error: Cannot find module 'webpack-cli'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at runCommand.then (C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack\bin\webpack.js:143:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7) code: 'MODULE_NOT_FOUND' }
+PS C:\cat\markup-training> npm i -D webpack-cli
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uglifyjs.cmd as it wasn't installed by C:\cat\markup-training\node_modules\uglify-js
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uglifyjs as it wasn't installed by C:\cat\markup-training\node_modules\uglify-js
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\svgo.cmd as it wasn't installed by C:\cat\markup-training\node_modules\svgo
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\svgo as it wasn't installed by C:\cat\markup-training\node_modules\svgo
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uuid.cmd as it wasn't installed by C:\cat\markup-training\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uuid as it wasn't installed by C:\cat\markup-training\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\js-yaml.cmd as it wasn't installed by C:\cat\markup-training\node_modules\js-yaml
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\js-yaml as it wasn't installed by C:\cat\markup-training\node_modules\js-yaml
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\semver.cmd as it wasn't installed by C:\cat\markup-training\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\semver as it wasn't installed by C:\cat\markup-training\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\node-gyp.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\node-gyp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\node-gyp as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\node-gyp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\rimraf.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\rimraf
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\rimraf as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\rimraf
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\which.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\which
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\which as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\which
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\uuid.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\uuid as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\JSONStream.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\JSONStream
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\JSONStream as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\JSONStream
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\semver.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\semver as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\qrcode-terminal.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\qrcode-terminal
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\qrcode-terminal as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\qrcode-terminal
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\opener.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\opener
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\opener as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\opener
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\mkdirp.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\mkdirp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\mkdirp as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\mkdirp
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\browserslist.cmd as it wasn't installed by C:\cat\markup-training\node_modules\browserslist
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\browserslist as it wasn't installed by C:\cat\markup-training\node_modules\browserslist
+
+> node-sass@4.9.0 install C:\cat\markup-training\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\oklend\AppData\Roaming\npm-cache\node-sass\4.9.0\win32-x64-64_binding.node
+
+> node-sass@4.9.0 postinstall C:\cat\markup-training\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\cat\markup-training\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+
+> gifsicle@3.0.4 postinstall C:\cat\markup-training\node_modules\gifsicle
+> node lib/install.js
+
+  √ gifsicle pre-build test passed successfully
+
+> jpegtran-bin@3.2.0 postinstall C:\cat\markup-training\node_modules\jpegtran-bin
+> node lib/install.js
+
+  √ jpegtran pre-build test passed successfully
+
+> optipng-bin@3.1.4 postinstall C:\cat\markup-training\node_modules\optipng-bin
+> node lib/install.js
+
+  √ optipng pre-build test passed successfully
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ webpack-cli@3.2.3
+added 163 packages from 168 contributors, removed 502 packages, updated 1697 packages and audited 31044 packages in 57.521s
+found 33 vulnerabilities (2 low, 25 moderate, 6 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): y
+Installing 'webpack-cli' (running 'yarn add -D webpack-cli')...
+yarn add v1.7.0
+[1/4] Resolving packages...
+⠂ build@cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline(node:10740) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > webpack-dev-server@2.9.1" has incorrect peer dependency "webpack@^2.2.0 || ^3.0.0".
+warning "webpack-dev-server > webpack-dev-middleware@1.12.2" has incorrect peer dependency "webpack@^1.0.0 || ^2.0.0 || ^3.0.0".
+[4/4] Building fresh packages...
+success Saved 1 new dependency.
+info Direct dependencies
+└─ webpack-cli@3.2.3
+info All dependencies
+└─ webpack-cli@3.2.3
+Done in 13.50s.
+{ Error: Cannot find module 'webpack-cli'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at runCommand.then (C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack\bin\webpack.js:143:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7) code: 'MODULE_NOT_FOUND' }
+PS C:\cat\markup-training> npm rm -g webpack-cli
+up to date in 0.038s
+PS C:\cat\markup-training> npm i -D webpack-cli
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uglifyjs.cmd as it wasn't installed by C:\cat\markup-training\node_modules\uglify-js
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uglifyjs as it wasn't installed by C:\cat\markup-training\node_modules\uglify-js
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\svgo.cmd as it wasn't installed by C:\cat\markup-training\node_modules\svgo
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\svgo as it wasn't installed by C:\cat\markup-training\node_modules\svgo
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uuid.cmd as it wasn't installed by C:\cat\markup-training\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uuid as it wasn't installed by C:\cat\markup-training\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\js-yaml.cmd as it wasn't installed by C:\cat\markup-training\node_modules\js-yaml
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\js-yaml as it wasn't installed by C:\cat\markup-training\node_modules\js-yaml
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\semver.cmd as it wasn't installed by C:\cat\markup-training\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\semver as it wasn't installed by C:\cat\markup-training\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\node-gyp.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\node-gyp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\node-gyp as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\node-gyp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\rimraf.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\rimraf
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\rimraf as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\rimraf
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\which.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\which
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\which as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\which
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\uuid.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\uuid as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\JSONStream.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\JSONStream
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\JSONStream as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\JSONStream
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\semver.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\semver as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\qrcode-terminal.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\qrcode-terminal
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\qrcode-terminal as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\qrcode-terminal
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\opener.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\opener
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\opener as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\opener
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\mkdirp.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\mkdirp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\mkdirp as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\mkdirp
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\browserslist.cmd as it wasn't installed by C:\cat\markup-training\node_modules\browserslist
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\browserslist as it wasn't installed by C:\cat\markup-training\node_modules\browserslist
+
+> node-sass@4.9.0 install C:\cat\markup-training\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\oklend\AppData\Roaming\npm-cache\node-sass\4.9.0\win32-x64-64_binding.node
+
+> node-sass@4.9.0 postinstall C:\cat\markup-training\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\cat\markup-training\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+
+> gifsicle@3.0.4 postinstall C:\cat\markup-training\node_modules\gifsicle
+> node lib/install.js
+
+  √ gifsicle pre-build test passed successfully
+
+> jpegtran-bin@3.2.0 postinstall C:\cat\markup-training\node_modules\jpegtran-bin
+> node lib/install.js
+
+  √ jpegtran pre-build test passed successfully
+
+> optipng-bin@3.1.4 postinstall C:\cat\markup-training\node_modules\optipng-bin
+> node lib/install.js
+
+  √ optipng pre-build test passed successfully
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ webpack-cli@3.2.3
+added 163 packages from 168 contributors, removed 502 packages, updated 1697 packages and audited 31044 packages in 65.422s
+found 33 vulnerabilities (2 low, 25 moderate, 6 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): n
+You need to install 'webpack-cli' to use webpack via CLI.
+You can also install the CLI manually.
+PS C:\cat\markup-training> npm webpack
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\oklend\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.7.0 C:\Users\oklend\AppData\Roaming\npm\node_modules\npm
+
+Did you mean this?
+    pack
+PS C:\cat\markup-training> yarn add -d webpack-cli
+yarn add v1.7.0
+error Missing list of packages to add to your project.
+info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
+PS C:\cat\markup-training> yarn add -g webpack-cli
+yarn add v1.7.0
+error Missing list of packages to add to your project.
+info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
+PS C:\cat\markup-training> yarn add  webpack-cli
+yarn add v1.7.0
+[1/4] Resolving packages...
+⠂ build@cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline(node:15288) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > webpack-dev-server@2.9.1" has incorrect peer dependency "webpack@^2.2.0 || ^3.0.0".
+warning "webpack-dev-server > webpack-dev-middleware@1.12.2" has incorrect peer dependency "webpack@^1.0.0 || ^2.0.0 || ^3.0.0".
+[4/4] Building fresh packages...
+success Saved 1 new dependency.
+info Direct dependencies
+└─ webpack-cli@3.2.3
+info All dependencies
+└─ webpack-cli@3.2.3
+warning "webpack-cli" is already in "devDependencies". Please remove existing entry first before adding it to "dependencies".
+Done in 12.59s.
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): n
+You need to install 'webpack-cli' to use webpack via CLI.
+You can also install the CLI manually.
+PS C:\cat\markup-training> npn uninstall devDependencies
+npn : Имя "npn" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ npn uninstall devDependencies
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (npn:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> npm uninstall devDependencies
+npm ERR! code EINVALIDTAGNAME
+npm ERR! Invalid tag name "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline": Tags may not have any characters that encodeURIComponent encodes.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\oklend\AppData\Roaming\npm-cache\_logs\2019-02-10T17_18_08_456Z-debug.log
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): y
+Installing 'webpack-cli' (running 'yarn add -D webpack-cli')...
+yarn add v1.7.0
+[1/4] Resolving packages...
+⠂ build@cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline(node:14828) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > webpack-dev-server@2.9.1" has incorrect peer dependency "webpack@^2.2.0 || ^3.0.0".
+warning "webpack-dev-server > webpack-dev-middleware@1.12.2" has incorrect peer dependency "webpack@^1.0.0 || ^2.0.0 || ^3.0.0".
+[4/4] Building fresh packages...
+success Saved 1 new dependency.
+info Direct dependencies
+└─ webpack-cli@3.2.3
+info All dependencies
+└─ webpack-cli@3.2.3
+Done in 7.46s.
+{ Error: Cannot find module 'webpack-cli'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at runCommand.then (C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack\bin\webpack.js:143:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7) code: 'MODULE_NOT_FOUND' }
+PS C:\cat\markup-training> annot find module 'webpack-cli' Error: Cannot find module 'webpack-cli' Error: Cannot find module 'webpack-cli'webpack-cli init
+annot : Имя "annot" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ annot find module 'webpack-cli' Error: Cannot find module 'webpack-cl ...
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (annot:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> webpack-cli init
+webpack-cli : Имя "webpack-cli" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ webpack-cli init
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (webpack-cli:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> npm i -D webpack-cli
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uglifyjs.cmd as it wasn't installed by C:\cat\markup-training\node_modules\uglify-js
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uglifyjs as it wasn't installed by C:\cat\markup-training\node_modules\uglify-js
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\svgo.cmd as it wasn't installed by C:\cat\markup-training\node_modules\svgo
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\svgo as it wasn't installed by C:\cat\markup-training\node_modules\svgo
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uuid.cmd as it wasn't installed by C:\cat\markup-training\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\uuid as it wasn't installed by C:\cat\markup-training\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\js-yaml.cmd as it wasn't installed by C:\cat\markup-training\node_modules\js-yaml
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\js-yaml as it wasn't installed by C:\cat\markup-training\node_modules\js-yaml
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\semver.cmd as it wasn't installed by C:\cat\markup-training\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\semver as it wasn't installed by C:\cat\markup-training\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\node-gyp.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\node-gyp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\node-gyp as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\node-gyp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\rimraf.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\rimraf
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\rimraf as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\rimraf
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\which.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\which
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\which as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\which
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\uuid.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\uuid as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\uuid
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\JSONStream.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\JSONStream
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\JSONStream as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\JSONStream
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\semver.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\semver as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\semver
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\qrcode-terminal.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\qrcode-terminal
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\qrcode-terminal as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\qrcode-terminal
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\opener.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\opener
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\opener as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\opener
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\mkdirp.cmd as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\mkdirp
+npm WARN rm not removing C:\cat\markup-training\node_modules\npm\node_modules\.bin\mkdirp as it wasn't installed by C:\cat\markup-training\node_modules\npm\node_modules\mkdirp
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\browserslist.cmd as it wasn't installed by C:\cat\markup-training\node_modules\browserslist
+npm WARN rm not removing C:\cat\markup-training\node_modules\.bin\browserslist as it wasn't installed by C:\cat\markup-training\node_modules\browserslist
+
+> node-sass@4.9.0 install C:\cat\markup-training\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\oklend\AppData\Roaming\npm-cache\node-sass\4.9.0\win32-x64-64_binding.node
+
+> node-sass@4.9.0 postinstall C:\cat\markup-training\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\cat\markup-training\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+
+> gifsicle@3.0.4 postinstall C:\cat\markup-training\node_modules\gifsicle
+> node lib/install.js
+
+  √ gifsicle pre-build test passed successfully
+
+> jpegtran-bin@3.2.0 postinstall C:\cat\markup-training\node_modules\jpegtran-bin
+> node lib/install.js
+
+  √ jpegtran pre-build test passed successfully
+
+> optipng-bin@3.1.4 postinstall C:\cat\markup-training\node_modules\optipng-bin
+> node lib/install.js
+
+  √ optipng pre-build test passed successfully
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ webpack-cli@3.2.3
+added 163 packages from 168 contributors, removed 502 packages, updated 1697 packages and audited 31044 packages in 87.598s
+found 33 vulnerabilities (2 low, 25 moderate, 6 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+PS C:\cat\markup-training> webpack-cli
+webpack-cli : Имя "webpack-cli" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ webpack-cli
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (webpack-cli:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> webpack
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "yarn" to install the CLI via "yarn add -D".
+Do you want to install 'webpack-cli' (yes/no): y
+Installing 'webpack-cli' (running 'yarn add -D webpack-cli')...
+yarn add v1.7.0
+[1/4] Resolving packages...
+⠂ build@cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline(node:1860) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+[2/4] Fetching packages...
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > webpack-dev-server@2.9.1" has incorrect peer dependency "webpack@^2.2.0 || ^3.0.0".
+warning "webpack-dev-server > webpack-dev-middleware@1.12.2" has incorrect peer dependency "webpack@^1.0.0 || ^2.0.0 || ^3.0.0".
+[4/4] Building fresh packages...
+success Saved 1 new dependency.
+info Direct dependencies
+└─ webpack-cli@3.2.3
+info All dependencies
+└─ webpack-cli@3.2.3
+Done in 12.78s.
+{ Error: Cannot find module 'webpack-cli'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at runCommand.then (C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack\bin\webpack.js:143:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7) code: 'MODULE_NOT_FOUND' }
+PS C:\cat\markup-training>  Error: Cannot find module 'webpack-cli'
+Error: : Имя "Error:" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:2
++  Error: Cannot find module 'webpack-cli'
++  ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Error::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> npm install -g webpack-cli
+C:\Users\oklend\AppData\Roaming\npm\webpack-cli -> C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack-cli\bin\cli.js
+npm WARN webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+
++ webpack-cli@3.2.3
+added 208 packages from 127 contributors in 9.719s
+PS C:\cat\markup-training> webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+webpack-cli@3.2.3 : Имя "webpack-cli@3.2.3" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is instal ...
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (webpack-cli@3.2.3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training>  webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+webpack-cli@3.2.3 : Имя "webpack-cli@3.2.3" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:2
++  webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is insta ...
++  ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (webpack-cli@3.2.3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\cat\markup-training> npm install -g npm-install-peers
+C:\Users\oklend\AppData\Roaming\npm\npm-install-peers -> C:\Users\oklend\AppData\Roaming\npm\node_modules\npm-install-peers\bin\npm-install-peers.js
++ npm-install-peers@1.2.1
+added 434 packages from 789 contributors in 12.147s
+PS C:\cat\markup-training> npm-install-peers
+This package doesn't seem to have any peerDependencies
+PS C:\cat\markup-training> npm install -g webpack-cli
+C:\Users\oklend\AppData\Roaming\npm\webpack-cli -> C:\Users\oklend\AppData\Roaming\npm\node_modules\webpack-cli\bin\cli.js
+npm WARN webpack-cli@3.2.3 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+
++ webpack-cli@3.2.3
+updated 1 package in 1.844s
+PS C:\cat\markup-training> webpack
+Hash: 2a0cb859858627c4685a
+Version: webpack 4.14.0
+Time: 1447ms
+Built at: 2019-02-10 21:33:10
+    Asset      Size  Chunks             Chunk Names
+vendor.js    41 KiB       0  [emitted]  vendor
+common.js  3.92 KiB       1  [emitted]  common
+Entrypoint common = vendor.js common.js
+[1] ./js/modules/common/common.js 900 bytes {1} [built]
+    + 1 hidden module
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+PS C:\cat\markup-training> npm install -g npm-install-peersnpm install -g npm-install-peers

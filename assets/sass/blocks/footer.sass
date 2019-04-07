@@ -1,0 +1,96 @@
+.footer
+  display: flex
+  flex-direction: row
+  align-content: center
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+  background-color: $footerColor
+  width: 1150px
+  height: 142px
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+
+
+  @media screen and (max-width: 770px)
+    flex-direction: column
+    width: 320px
+
+
+  &__left
+    display: flex
+    align-content: center
+    align-items: center
+    background-image: url('../images/footer-logo.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 40%
+    width: 320px
+    height: 85px
+
+    &:hover
+      background-image: url('../images/logo-hover.svg')
+
+    @media screen and (max-width: 770px)
+      display: none
+      visibility: hidden
+
+
+  &__center
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: space-around
+    width: 220px
+    height: 85px
+
+
+    &_insta
+      background-image: url('../images/insta.svg')
+      background-repeat: no-repeat
+      width: 25px
+      height: 25px
+
+      &:hover
+        background-image: url('../images/insta-hover.svg')
+
+
+
+    &_face
+      background-image: url('../images/face.svg')
+      background-repeat: no-repeat
+      width: 25px
+      height: 25px
+      background-position-x: 30%
+
+      &:hover
+        background-image: url('../images/face-hover.svg')
+
+
+    &_twit
+      background-image: url('../images/twit.svg')
+      background-repeat: no-repeat
+      width: 25px
+      height: 25px
+
+      &:hover
+        background-image: url('../images/twit-hover.svg')
+
+  &__right
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+    background-image: url('../images/html.svg')
+    background-repeat: no-repeat
+    background-size: 100%
+    width: 320px
+    height: 85px
+    font-size: 20px
+    font-weight: bold
+    background-position-x: 100px
+    background-position-y: center
+
+    &:hover
+      color: $azur

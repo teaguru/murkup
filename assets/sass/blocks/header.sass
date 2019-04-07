@@ -1,0 +1,141 @@
+.header
+  display: flex
+  align-content: center
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+  border-bottom: $line
+  background-color: $white
+  width: 100%
+  max-width: 1150px
+  font-weight: bold
+
+  &__section
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    height: 85px
+
+    @media screen and (min-width: 770px) and (max-width: 1070px)
+
+      align-items: flex-start
+      justify-content: flex-start
+
+
+    @media screen and (max-width: 770px)
+      flex-direction: column
+      width: 100%
+      height: auto
+
+
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: 0
+    cursor: pointer
+    min-width: 110px
+    height: 85px
+    font-size: 10px
+
+    @media screen and (max-width: 770px)
+      justify-content: flex-start
+      border-right: 0
+      border-bottom: $line
+      border-left: 0
+      padding-left: 80px
+      width: 320px
+      height: 80px
+      font-size: 16px
+
+
+    &_230px
+      border-right: $line
+      border-left: $line
+      width: 230px
+
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        display: none
+        visibility: hidden
+
+
+    &_320px
+      border-right: $line
+      margin-legt: 30px
+      width: 320px
+
+    &_85px
+      justify-content: center
+      border-right: $line
+      border-left: $line
+      background-color: $transparentColor
+      width: 85px
+
+    &_200px
+      width: 200px
+      @media screen and (min-width: 770px) and (max-width: 1070px)
+        display: none
+        visibility: hidden
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    width: 770px
+    justify-content: flex-start
+
+
+  @media screen and (max-width: 770px)
+    flex-direction: column
+    width: 320px
+
+
+.big
+  color: $bigColor
+  font-size: 16px
+  font-style: $fontVerdana
+
+
+
+
+
+
+.logo
+  display: flex
+  background-image: url('../images/logo.svg')
+  background-repeat: no-repeat
+  background-position: center
+  width: 280px
+  height: 80px
+
+  @media screen and (min-width: 770px) and (max-width: 1070px)
+    margin-left: 30px
+    margin-right: 180px
+    background-image: url('../images/logo-tablet .svg')
+    background-position: center
+    width: 200px
+    background-position-x: auto
+    background-position-y: auto
+    background-size: 100
+
+
+
+  @media screen and (max-width: 770px)
+    display: flex
+    order: -1
+    background-image: url('../images/logo-mobile.svg')
+    background-size: 40%
+    width: 320px
+
+
+
+  &:hover
+    opacity: .5
+
+
+
+
+
+
+
+
+
+
+
